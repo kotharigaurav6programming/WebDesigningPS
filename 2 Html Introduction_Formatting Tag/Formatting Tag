@@ -1,0 +1,36 @@
+Formatting Tags
+----------------
+1. Heading Tag 
+    <h1></h1> 32px
+    <h2></h2> 24px
+    <h3></h3> 19px Approx. 
+    <h4></h4> 16px Normal Font Size
+    <h5></h5> 13px Approx.
+    <h6></h6> 11px Approx.
+Note : Makes your content bold
+       Block level element (This tags covers device width)  
+    
+2. bold Tag <b></b> (Inline element)
+3. italic Tag <i></i> (Inline element)
+4. underline Tag <u></u> (Inline element)
+
+5. Strong Tag <strong></strong> HTML5
+6. Emphasis Tag <em></em>       HTML5
+7. Big Tag <big></big>
+8. Small Tag <small></small>
+
+9. Superscript <sup></sup>
+10. Subscript <sub></sub>
+11. Double quotes <q></q>    HTML5
+12. Line Through <strike></strike> deprecated
+13. Line Through <del></del> HTML5
+
+14. Highlighting Tag <mark></mark>
+15. Preformatted tag <pre></pre>
+16. Center Tag <center></center> 
+17. Font Tag <font color="" face="" size=""></font>
+
+18. Code Tag <code></code> 
+19. Address Tag <address></address> 
+20. Blockquote Tag <Blockquote></Blockquote>
+21. Marquee Tag <marquee></marquee> For moving Content

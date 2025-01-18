@@ -1,0 +1,62 @@
+HTML
+----
+1. Full form of HTML is Hypertext Markup language.
+where Hypertext means a text which contains link to another text, and markup language means tag(<>) based language.
+Markup language works on three terminology :
+    a. Definition
+    b. Processing
+    c. Presentation
+
+2. Html document consists of multimmedia content(audio, video, animation,images etc)
+
+3. We can create HTML document on any word processing tool.
+Word processing tool = wordpad, notepad etc
+editor = vs code, sublime text etc
+tool = dreamviewer
+IDE(Integrated Development Enviroment) = netbeans , eclipse etc
+
+4. We need to save html document by .html or .htm extension and output is going to be displayed out on browser screen.
+5. Currently Html5 is going in the market.
+6. HTML5 provides you audio video tag 
+   HTML5 provides you semantic tags(<header>,<footer>,<article> etc)
+   HTML5 simplifies Doctype declaration
+   HTML5 provides various input types
+   HTML5 deals with javaScript to make html as a dhtml(dynamic html)
+
+7. Html also works on three terminology : 
+    a. tag
+    b. attribute
+    c. element
+
+    a. Tag : Tags are hidden keywords, which are mainly used to display content on output screen.Tags can be classifies as : 
+        
+        i. Empty Tag (unbalanced tag)
+            Only opening and no closing
+            Ex : <br>,<hr>,<img>,<input> etc
+
+        ii. Container Tag (balanced tag)
+            Opening and closing both
+            Ex : <html></html>, <head></head>, <div></div> etc
+
+        iii. Self closing tag (</>)
+            Ex : <br/>,<hr/>,<img/>,<input/> etc
+
+        iv. Semantic Tag
+            Tag which shows there meaning by name
+            <header> = tells the content it consists is for header section
+            <footer> = tells the content it consists is for footer section    
+            <section> = tells the content it consists is for specific section  etc 
+
+        v. Non-Semantic Tag (Structural tag)
+            Generalized Tag which means this tags can be included in any semantic tag. Like <div> can be added in <header> also and <footer> also, likewise we can create form by <form> tag can be added in <header> also and in <footer> also.
+            Ex: <div>, <form>, <table> etc 
+
+    b. Attribute : Attribute provides some additional information.
+        <img src='' height='' width=''>
+        <p align=''>
+
+        Here src, height, width, align etc are all attributes which provides some additional information.
+
+    c. Element : Html is an element, which represents whole document and it comprises of opening of html tag <html> and closing of html tag</html>.
+
+    Body is an element, which represents document's body and it comprises of opening of body tag <body> and closing of body tag</body>.

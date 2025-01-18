@@ -1,0 +1,73 @@
+Web Application Development
+|-- Front End <--------------------------
+    |-- We need to know about web technologies
+        |-- HTML(HTML5)
+	    |-- Structure of a web page	
+	|-- CSS(CSS3)
+	    |-- Provides more properties to make webpage attractive
+	    |-- Tailwind CSS 		
+	|-- MEDIA QUERY(It is used to make web page responsive)
+	|-- BOOTSTRAP(Bootstrap5) (It is HTML,CSS and JS framework)
+	|-- JAVASCRIPT
+            |--client side javascript(html,bootstrap,reactjs etc)
+		|-- frontend
+	    |--server side javascript(nodejs,expressjs etc)
+		|-- backend 
+	|-- JQUERY
+	|-- REACT JS
+  
+|-- Back End
+	|-- Programming language
+		|-- java,python,php,.net etc
+	|-- Database
+		|-- RDBMS
+			|--MYSQL,SQL,POSTGRE,ORACLE etc
+			|--ORM TOOL
+			    |-- SEQUELIZE, TYPEORM etc	
+		|-- NOSQL
+			|--MONGODB etc
+			|--ODM TOOL
+			    |-- MONGOOSE etc 
+        |-- Server 
+	|-- Server maintenance
+	|-- API (APPLICATION PROGRAMMING INTERFACE)
+------------------------------------------------------------------
+Front end : Presentation Layer | View | User interaction design
+|-- web designing
+	|-- web technologies
+		|-- html css bootstrap javascript reactjs etc
+
+Web : 
+It is an information space which comprises of documents and web resources and are interlinked by hyperlinks and have some specific url and are access via internet.
+
+WebPage :
+a. Web pages are the documents which are written in a plain text
+b. Web pages contains multimedia content(Audio, video, animation, images etc)
+c. Every web page have some specific URL(Uniform Resource Locator)
+d. Must be deployed on atleast one server.
+
+WebSite : 
+Website is a collection of web pages.
+There are two types of websites : 
+	a. Static Website
+	b. Dynamic Website 
+
+	a. Static Website : 
+		i. Only one way communication takes place.
+		ii. Contents may not change so frequently.
+
+	b. Dynamic Website : 
+		i. Two way communication takes place.
+		ii. Contents may change accordingly.
+
+Note : Dynamic Website is also known as web application.
+
+WebApplication : 
+Application which runs on the browser and whose execution takes place on the server is known as web application. Web Application works on client - server architecture.
+
+Server : 
+Server is a highly configured machine, which store data, performs processing on that data and helps in retrieval of data.
+There are two types of server : 
+	a. Web server.
+	b. Application server.
+	     

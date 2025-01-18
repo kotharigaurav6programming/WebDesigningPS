@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <table>
+        <caption>
+            <h2>Registration Form</h2>
+        </caption>
+        <tr>
+            <td>
+                <label for="username">Username</label>
+            </td>
+            <td>
+                <input value="John Deo" readonly type="text" placeholder="Enter Username" id="username" name="username">
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <label for="email">Email</label>
+            </td>
+            <td>
+                <input type="email" placeholder="Enter Email" id="email" name="email">
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <label for="password">Password</label>
+            </td>
+            <td>
+                <input type="password" id="password" name="password" placeholder="Enter Password">
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <label for="contact">Contact</label>
+            </td>
+            <td>
+                <input type="text" maxlength="10" placeholder="Enter 10-digit Mobile Number" id="contact" name="contact">
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <label for="date">DOB</label>
+            </td>
+            <td>
+                <input type="date" id="date" name="date">
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <label for="male">Gender</label>
+            </td>
+            <td>
+                <input checked type="radio" id="male" name="gender" value="Male">
+                <label for="male">Male</label>
+                <input type="radio" id="female" name="gender" value="Female">
+                <label for="female">Female</label>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <label for="cricket">Hobbies</label>
+            </td>
+            <td>
+                <input checked type="checkbox" id="cricket" name="cricket" value="Cricket">
+                <label for="cricket">Cricket</label>
+                <input type="checkbox" id="football" name="football" value="Football">
+                <label for="football">Football</label>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <label for="subject">Subject</label>
+            </td>
+            <td>
+                <select name="subject" id="subject">
+                <!-- <select name="subject" id="subject" multiple> -->
+                    <option value="">Select Subject</option>
+                    <option value="Mern Stack">Mern Stack</option>
+                    <option value="Java Programming">Java Programming</option>
+                    <option value="Python Programming">Python Programming</option>
+                </select>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <label for="address">Address</label>
+            </td>
+            <td>
+                <textarea rows="3" cols="21" name="address" id="address" placeholder="Enter Address"></textarea>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <label for="file">Upload File</label>
+            </td>
+            <td>
+                <input type="file" id="file" name="file">
+            </td>
+        </tr>
+        <tr>
+            <td></td>
+            <td>
+                <input type="submit" value="Register">
+                <input type="reset" value="Reset">
+            </td>
+        </tr>
+    </table>
+</body>
+</html>

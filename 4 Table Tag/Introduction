@@ -1,0 +1,15 @@
+Table Tag
+---------
+<table>
+<caption> = Table Name
+<thead> = table head (used to represent first row in a table generally heading)
+<tbody> = table body (used to represent table content)
+<tfoot> = table foot (used to represent last row in a table generally footer)
+<tr> = table row
+<td> = table data(represents column)
+<th> = table heading (Makes content of first row of a table in bold)
+<colgroup> = group columns
+<col> = represents individual column
+
+rowspan = rowspan is for converting multiple rows into single row
+colspan = colspan is mainly used for converting multiple columns into single column

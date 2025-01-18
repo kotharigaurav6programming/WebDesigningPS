@@ -1,0 +1,26 @@
+Form Tag
+--------
+<form action="" method="get | post"> here get method is default method
+<input type="" placeholder="" id="" name="">
+       type="text"
+       type="email"     Html5 
+       type="password"  Html5
+       type="date"      Html5
+       type="checkbox" 
+       type="radio" 
+       type="file" 
+       type="time"      Html5
+       type="month"     Html5
+       type="week"      Html5
+       type="color"     Html5
+       type="number"
+       type="url"       Html5
+       type="submit"
+       type="reset"   
+<button>
+<select>
+<option value="">
+<textarea rows="" cols="" placeholder="">
+<fieldset>
+<label for="">
+<legend> -------Welcome--------

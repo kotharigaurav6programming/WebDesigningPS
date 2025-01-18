@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title></title>
+    </head>
+    <body>
+        ......
+        ......
+    </body>
+</html>
+
+-----------------------------------------------
+
+<!DOCTYPE html>
+here 
+    <! represents MDO = markup declaration open 
+    
+    DOCTYPE = Doctype represents which type of documentation(tags of which html version like html 1,2,3,4 tags or html 5 tags etc) browser needs to expect from this html document.
+    
+    html = html document
+
+<html> = represents whole html document
+    <head> = represents head which comprises of title, stylesheets and scripts files.
+        <title></title> = represents name on tab
+    </head>
+    <body> = represents body content of your html document
+        ......
+        ......
+    </body>
+</html>
