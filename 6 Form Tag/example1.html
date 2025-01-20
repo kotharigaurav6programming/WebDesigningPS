@@ -6,7 +6,12 @@
     <title>Document</title>
 </head>
 <body>
-    <table>
+    <fieldset>
+        <legend align="center">
+            <fieldset>Fill out this form first</fieldset>
+        </legend>
+    <form action="welcome.html" method="post">
+    <table align="center">
         <caption>
             <h2>Registration Form</h2>
         </caption>
@@ -15,7 +20,8 @@
                 <label for="username">Username</label>
             </td>
             <td>
-                <input value="John Deo" readonly type="text" placeholder="Enter Username" id="username" name="username">
+                <!-- <input required value="John Deo" readonly type="text" placeholder="Enter Username" id="username" name="username"> -->
+                <input required value="John Deo" type="text" placeholder="Enter Username" id="username" name="username">
             </td>
         </tr>
         <tr>
@@ -23,7 +29,7 @@
                 <label for="email">Email</label>
             </td>
             <td>
-                <input type="email" placeholder="Enter Email" id="email" name="email">
+                <input required type="email" placeholder="Enter Email" id="email" name="email">
             </td>
         </tr>
         <tr>
@@ -31,7 +37,7 @@
                 <label for="password">Password</label>
             </td>
             <td>
-                <input type="password" id="password" name="password" placeholder="Enter Password">
+                <input required type="password" id="password" name="password" placeholder="Enter Password">
             </td>
         </tr>
         <tr>
@@ -39,7 +45,7 @@
                 <label for="contact">Contact</label>
             </td>
             <td>
-                <input type="text" maxlength="10" placeholder="Enter 10-digit Mobile Number" id="contact" name="contact">
+                <input required type="text" maxlength="10" placeholder="Enter 10-digit Mobile Number" id="contact" name="contact">
             </td>
         </tr>
         <tr>
@@ -47,7 +53,7 @@
                 <label for="date">DOB</label>
             </td>
             <td>
-                <input type="date" id="date" name="date">
+                <input required type="date" id="date" name="date">
             </td>
         </tr>
         <tr>
@@ -55,7 +61,7 @@
                 <label for="male">Gender</label>
             </td>
             <td>
-                <input checked type="radio" id="male" name="gender" value="Male">
+                <input required checked type="radio" id="male" name="gender" value="Male">
                 <label for="male">Male</label>
                 <input type="radio" id="female" name="gender" value="Female">
                 <label for="female">Female</label>
@@ -77,7 +83,7 @@
                 <label for="subject">Subject</label>
             </td>
             <td>
-                <select name="subject" id="subject">
+                <select required name="subject" id="subject">
                 <!-- <select name="subject" id="subject" multiple> -->
                     <option value="">Select Subject</option>
                     <option value="Mern Stack">Mern Stack</option>
@@ -91,7 +97,7 @@
                 <label for="address">Address</label>
             </td>
             <td>
-                <textarea rows="3" cols="21" name="address" id="address" placeholder="Enter Address"></textarea>
+                <textarea required rows="3" cols="21" name="address" id="address" placeholder="Enter Address"></textarea>
             </td>
         </tr>
         <tr>
@@ -99,7 +105,7 @@
                 <label for="file">Upload File</label>
             </td>
             <td>
-                <input type="file" id="file" name="file">
+                <input required type="file" id="file" name="file">
             </td>
         </tr>
         <tr>
@@ -110,5 +116,7 @@
             </td>
         </tr>
     </table>
+    </form>
+    </fieldset>
 </body>
 </html>
