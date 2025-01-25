@@ -1,0 +1,17 @@
+Inline Css
+----------
+<element_name style="property:value;">
+    .....
+</element_name>
+
+<div style="color:red;">
+    .....
+</div>
+
+<element_name style="property:value; property:value; property:value;">
+    .....
+</element_name>
+
+<div style="color:red; font-size:45px; background-color: blue;">
+    .....
+</div>

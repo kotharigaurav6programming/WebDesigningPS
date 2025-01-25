@@ -1,0 +1,43 @@
+CSS = Cascading Style Sheet
+---------------------------
+1. CSS was developed by W3C (World Wide Web Consortium) simply for simplifying the work of designer.
+
+2. Full Form of CSS is Cascading Style Sheet
+
+   Difference between css and css3 ? <-------HOME WORK
+
+3. Currently CSS3 is going in the market.
+   Whats new in CSS3 ?
+   -- Animation, transition and transformation
+   -- Concept of Gradient came in existence 
+   -- Border related properties
+        |-- border-radius
+   -- Column related properties 
+        |-- column-count
+        |-- column-rule-color
+        |-- column-rule-width etc 
+   -- Responsiveness
+        |-- Media Query
+        |-- flex box (Properties) 
+   -- Advanced Selectors
+
+4. CSS makes your web page more effective with its properties.
+
+5. We can implement css by three ways : 
+    a. Inline CSS
+        |-- where properties are going to be implements with tags in a inline manner means on the same line.
+    b. Internal CSS
+        |-- where properties are going to be implements on the same page inside <style> element
+    c. External CSS
+        |-- where properties are going to be implements on another page and can be link up on the page where it is required.
+
+6. Priority goes to inline css but recommended approach to use css is external css.
+
+7. Here HTML is simply responsible for creating the structure of website but css provides styling effects to that structure.
+
+8. Css mainly deals with properties and there corresponding values.
+
+9. Css works on the top of HTML.
+   Without HTML, there is no existence of css.
+
+10. Css is responsible for making web page responsive with the help of media query.
