@@ -15,3 +15,11 @@ Inline Css
 <div style="color:red; font-size:45px; background-color: blue;">
     .....
 </div>
+
+text-decoration: underline;
+text-transform: uppercase;
+word-spacing:20px;
+background-color: lightgray;
+color:white;
+font-family: cursive;
+
