@@ -1,0 +1,59 @@
+Type of selectors : 
+
+  1. Element Selector or Tag selector 
+     syntax : 
+     element_name{
+        property:name;
+            |     |
+     }   
+     example:
+     div{
+        background-color:red;
+        color:blue;
+     }
+
+  2. Id selector(#)
+  3. Class selector(.)
+  4. Universal selector(*)
+  syntax: 
+  *{
+    property:value;
+     |         |
+  }
+  example:
+  *{
+    margin:0;
+    font-family:cursive;
+  }
+  
+  5. Grouping selector(,)
+  syntax : 
+     element1_name,element2_name,element_n_name{
+        property:name;
+            |     |
+     }   
+     example:
+     div,span{
+        background-color:red;
+        color:blue;
+     }
+
+  6. Descendant selector( )
+     syntax : 
+     element1_name element2_name element_n_name {
+        property:value;
+          |        |
+     }
+     example: 
+     div span p{
+        color:red;
+     }
+
+  7. Advanced selector
+      a.Adjacent Sibling Selector(+)
+      b.General Sibling Selector(~) 
+      c.Direct Child Selector(>)
+      d.Attribute Selector(element_name[type='....'])
+      e.nth-of-type selector
+      f.Pseudo element Selector(::)
+      g.Pseudo class selector(:)

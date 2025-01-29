@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title></title>
+        <style>
+          ######## Selectors #########
+          Selector simply represents, which property corresponding to its value is going to be implements on which specific element. 
+          
+          Type of selectors : 
+
+            1. Element Selector or Tag selector (element_name{})
+            2. Id selector(#)
+            3. Class selector(.)
+            4. Universal selector(*)
+            5. Grouping selector(,)
+            6. Descendant selector( )
+            7. Advanced selector
+                a.Adjacent Sibling Selector(+)
+                b.General Sibling Selector(~) 
+                c.Direct Child Selector(>)
+                d.Attribute Selector(element_name[type='....'])
+                e.nth-of-type selector
+                f.Pseudo element Selector(::)
+                g.Pseudo class selector(:)
+        </style>
+    </head>
+    <body>
+        <div></div>
+        <span></span>
+        <p></p>
+    </body>
+</html>
