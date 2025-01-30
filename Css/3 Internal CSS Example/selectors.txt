@@ -13,7 +13,9 @@ Type of selectors :
      }
 
   2. Id selector(#)
+
   3. Class selector(.)
+  
   4. Universal selector(*)
   syntax: 
   *{
