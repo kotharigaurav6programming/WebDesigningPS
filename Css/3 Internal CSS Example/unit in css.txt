@@ -1,0 +1,51 @@
+Units in CSS
+------------
+
+1. px = fixed in size
+   
+   parent section = width : 500px
+   |-------------------500px----------------------------|
+   child section = width : 400px
+   |-----------------400px---------------------|
+ 
+   parent section = width : 300px
+   |----------300px------------------|
+   child section = width : 400px
+   |-----------------400px---------------------|
+
+2. % = percentage
+
+   parent section = width : 500px
+   |-------------------500px----------------------------|
+   child section = width : 90%
+   |-----------------90%---------------------|
+ 
+   parent section = width : 300px
+   |----------300px------------------|
+   child section = width : 90%
+   |-----------------90%---------------------|
+
+3. vh = viewport height
+   vw = viewport width
+
+   1vh = 1% of device height
+   If device height = 500px
+
+   1vh = 1% of 500px    
+       = 1/100 x 500
+       = 5px
+
+   5vh = 5% of 500px
+       = 5/100 x 500
+       = 25px 
+
+   1vw = 1% of device width
+   If device width = 500px
+
+   1vw = 1% of 500px    
+       = 1/100 x 500
+       = 5px
+
+   5vw = 5% of 500px
+       = 5/100 x 500
+       = 25px 

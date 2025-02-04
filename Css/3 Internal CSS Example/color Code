@@ -1,0 +1,56 @@
+Color Code 
+----------
+1. By color name
+color:red 
+
+2. By RGB 
+   R = red
+   G = Green 
+   B = Blue
+   
+   rgb(0,0,0);     black color
+   rgb(123,34,45);
+        |   |  | 
+   rgb(255,255,255); white color
+
+3. By RGBA
+     R = Red
+     G = Green
+     B = Blue
+     A = Alpha, It represents opacity
+     opacity value range is of 0 to 1
+     where 0 represents complete transparency
+     and 1 represents solidness 
+
+     rgba(255,45,123,0.5);
+
+4. HSL
+     H = HUE
+     S = SATURATION
+     L = LIGHTNESS
+
+     HUE = 0 to 360 degree
+
+     Saturation = value is in %
+     100%      75%       50%       25%       0%       
+     Darkness <-------------------------- LIGHTNESS
+
+     Lightness = value is in %
+     100%      75%       50%       25%       0%       
+     LIGHTNESS <-------------------------- Darkness
+
+5. HSLA
+     H = HUE
+     S = SATURATION
+     L = LIGHTNESS
+     A = ALPHA
+
+6. HEXCODE
+     #RRGGBB
+     #223344
+     #000000 = black
+     #999999 = white
+     #456765
+
+     shorthand : #RGB
+                 #234
