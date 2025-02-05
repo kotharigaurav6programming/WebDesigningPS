@@ -49,3 +49,29 @@ Units in CSS
    5vw = 5% of 500px
        = 5/100 x 500
        = 25px 
+
+4. em = empherical unit
+    By default : 
+        1em = 16px
+        2em = 32px
+        2.5em = 40px 
+
+    With respect to parent : 
+        if parent font-size is of 20px, then 
+            1em = 20px
+            2em = 40px 
+            2.5em = 50px 
+    
+    rem = root empherical unit (here root is html element)
+        By default : 
+        1rem = 16px
+        2rem = 32px
+        2.5rem = 40px 
+
+    With respect to root element i.e html element : 
+        if html element font-size is of 20px, then 
+            1rem = 20px
+            2rem = 40px 
+            2.5rem = 50px 
+
+
