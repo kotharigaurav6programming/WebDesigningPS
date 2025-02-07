@@ -1,0 +1,21 @@
+*{
+    margin:0px;
+}
+#banner{
+    height: 300px;
+    width: 400px;
+    background-color: black;
+}
+#icon{
+    height: 180px;
+    width: 180px;
+    margin-left: 100px;
+    margin-top:-90px;
+    border-radius: 50%;
+    background-color: whitesmoke;
+}
+#img{
+    height: 180px;
+    width: 180px;
+    border-radius: 50%;
+}
