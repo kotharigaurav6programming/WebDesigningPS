@@ -1,37 +1,45 @@
+*{
+    margin:0px;
+    background-color: lightgoldenrodyellow;
+}
 #container{
     height: auto;
 }
-#left{
+#leftsection{
+    height:100vh;
     width: 25%;
-    height: 100vh;
-    float: left;
     background-color: goldenrod;
+    float: left;
     position: fixed;
 }
-#right{
+#rightsection{
+    height: auto;
     width: 75%;
     background-color: lightgoldenrodyellow;
-    height: 100vh;
     float: left;
     margin-left: 25%;
 }
-#top{
-    height: 300px;
+#lefttop{
     width: 100%;
     background-color: black;
+    height: 40%;
 }
 #circle{
-    height: 150px;
-    width: 150px;
+    width:160px;
+    height: 160px;
     border-radius: 50%;
-    margin-left:75px;
-    margin-top:-75px;
     background-color: whitesmoke;
-    box-shadow: 1px 1px 35px 1px;
+    margin-left: 70px;
+    margin-top: -70px;
 }
-#image{
-    height: 150px;
-    width: 150px;
+#logo{
+    width:160px;
+    height: 160px;
     border-radius: 50%;
-    background-color: gold;
+}
+section{
+    height: 200px;
+    width: 80%;
+    background-color: black;
+    margin: 10%;
 }
