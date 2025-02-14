@@ -26,3 +26,48 @@
     margin-top: 10px;
     color:#7500c6;
 }
+#nav{
+    height:50px;
+    border-radius: 15px;
+    background-color: #7500c6;
+}
+#nav ul{
+    /* padding-top: 11px; */
+    list-style: none;
+}
+#nav ul li{
+    /* display: inline; */
+    display: inline-block;
+    padding: 11px 35px;
+}
+#nav ul li a{
+    color:white;
+    text-decoration: none;
+    font-size: 22px;
+    /* margin-left: 50px; */
+}
+#nav ul li:hover a{
+    color: #7500c6;
+}
+#nav ul li:hover{
+    /* background:linear-gradient(white,#7500c6); */
+    background-color: whitesmoke;
+    color:#7500c6;
+    height:28px;
+    transition: 0.7s;
+}
+#nav ul li ul{
+    display: none;
+}
+#nav ul li:hover ul{
+    display: block;
+    position: absolute;
+    width: 156px;
+    margin-left: -45px;
+    line-height: 30px;
+    background-color: lightskyblue;
+}
+#nav ul li:hover ul li{
+    margin-left: -38px;
+    padding:11px 20px;
+}
