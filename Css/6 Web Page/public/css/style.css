@@ -27,9 +27,12 @@
     color:#7500c6;
 }
 #nav{
+    position: sticky;
+    top:0;
     height:50px;
     border-radius: 15px;
     background-color: #7500c6;
+    z-index: 1;
 }
 #nav ul{
     /* padding-top: 11px; */
@@ -140,4 +143,85 @@
     background-color: #7500c6;
     color:white;
     border-radius: 15px;
+}
+#newsletter{
+    height:100px;
+    background-color: #7500c6;
+    padding: 50px;
+}
+#newsletter h1{
+    color:white;
+}
+#newsletter input[type='email']{
+    height:40px;
+    width: 500px;
+    text-align: center;
+    font-size: 18px;
+    outline: 0px;
+    margin: 2% 0% 0% 0%;
+}
+#newsletter input[type='submit']{
+    height:45px;
+    width: 200px;
+    text-align: center;
+    font-size: 18px;
+    border-width: 0px;
+    margin: 2% 0% 0% -0.5%;
+    background-color: black;
+    color:white;
+}
+#about{
+    height:500px;
+    padding: 50px;
+    /* background-color: green; */
+}
+#leftabout{
+    height:300px;
+    width: 300px;
+    border-radius: 50%;
+    /* background-color: red; */
+    margin-top: 6%;
+    float: left;
+}
+#rightabout{
+    height:400px;
+    width: 740px;
+    text-align: justify;
+    /* background-color: red; */
+    margin: 4% 0% 0% 3%;
+    float: left;
+    font-size: 17px;
+    padding: 10px;
+}
+#aboutimage{
+    height: 300px;
+    width:300px;
+    border-radius:50%;
+}
+#contact{
+    height:500px;
+    padding: 50px;
+    /* background-color: rgba(117, 0, 198,0.1); */
+    background-color: whitesmoke;
+}
+#contact1,#contact2,#contact3{
+    height: 380px;
+    width: 210px;
+    line-height: 32px;
+    background-color: #7500c6;
+    margin: 4% 0% 0% 1%;
+    float: left;
+    padding:20px 0px 0px 20px;
+    color:white;
+    border-radius: 20px;
+}
+#contact1 ul li a,#contact2 ul li a{
+    text-decoration: none;
+    color:white;
+}
+#contact4{
+    height: 400px;
+    width: 350px;
+    margin: 4% 0% 0% 1%;
+    float: left;
 }
