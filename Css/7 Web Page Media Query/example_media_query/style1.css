@@ -1,0 +1,27 @@
+#box{
+    height: auto;
+    background-color: teal;
+    width: 98%;
+    padding: 1%;
+    float: left;
+    text-align: justify;
+}
+#box1,#box2,#box3,#box4{
+    height: auto;
+    width: 19%;
+    background-color: black;
+    color:white;
+    float:left;
+    margin: 1%;
+    padding: 2%;
+}
+@media screen and (max-width:991px){
+    #box1,#box2,#box3,#box4{
+        width: 44%;
+    }
+}
+@media screen and (max-width:567px){
+    #box1,#box2,#box3,#box4{
+        width: 94%;
+    }
+}
