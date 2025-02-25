@@ -306,6 +306,14 @@ input[type='submit']:hover,input[type='reset']:hover{
     /* transform: rotateY(180deg); */
 }
 
+#humber{
+    height: 40px;
+    display: none;
+}
+#hum{
+    display: none;
+}
+
 /* media query styling starts */
 
 @media screen and (max-width:400px){
@@ -335,6 +343,8 @@ input[type='submit']:hover,input[type='reset']:hover{
         border-radius: 15px;
         background-color: #7500c6;
         z-index: 1;
+        float:left;
+        width: 100%;
     }
     #nav ul{
         /* padding-top: 11px; */
@@ -342,9 +352,25 @@ input[type='submit']:hover,input[type='reset']:hover{
     }
     #nav ul li{
         /* display: inline; */
-        display: inline-block;
+        display: block;
         padding: 11px 32px;
     }
+    
+    #humber{
+        display: block;
+        float: right;
+    }
+    #hum{
+        display: none;
+    }
+
+    #nav ul{
+        display: none;
+    }
+    #hum:checked ~ul{
+        display: block;
+    }
+
     #nav ul li a{
         color:white;
         text-decoration: none;
@@ -385,6 +411,7 @@ input[type='submit']:hover,input[type='reset']:hover{
         padding:11px 20px;
     }
     #banner{
+        clear: both;
         height: 360px;
         border-radius: 15px;
     }
@@ -507,17 +534,21 @@ input[type='submit']:hover,input[type='reset']:hover{
     }
     #contact{
         clear: both;
-        height:500px;
-        padding: 50px;
+        height:auto;
+        float: left;
+        padding: 20px;
         /* background-color: rgba(117, 0, 198,0.1); */
         background-color: whitesmoke;
+    }
+    #contact h1{
+        font-size: 26px;
     }
     #contact1,#contact2,#contact3{
         height: 380px;
         width: 210px;
         line-height: 32px;
         background-color: #7500c6;
-        margin: 4% 0% 0% 1%;
+        margin: 6% 0% 0% 15%;
         float: left;
         padding:20px 0px 0px 20px;
         color:white;
@@ -529,18 +560,22 @@ input[type='submit']:hover,input[type='reset']:hover{
     }
     #contact4{
         height: 400px;
-        width: 350px;
-        margin: 4% 0% 0% 1%;
+        width: 210px;
+        margin: 6% 0% 0% 15%;
         float: left;
     }
+    iframe{
+        height:400px;
+        width:210px;
+    }
     #footer{
-        font-size: 18px;
+        font-size: 12px;
         padding:10px;
     }
     #section{
         height: auto;
         width: 300px;
-        margin: 5% 0% 13% 37%;
+        margin: 20% 0% 13% 10%;
         background-color: white;
         box-shadow: 1px 1px 10px 1px;
     }
@@ -592,13 +627,14 @@ input[type='submit']:hover,input[type='reset']:hover{
         margin-left: 8%;
     }
     #galleryBox{
-        height: 530px;
+        height: auto;
+        float: left;
         /* background-color: crimson; */
     }
     #cards{
         height:300px;
         width: 220px;
-        margin-left: 5%;
+        margin-left: 20%;
         margin-top: 8%;
         float: left;
         overflow: hidden;
