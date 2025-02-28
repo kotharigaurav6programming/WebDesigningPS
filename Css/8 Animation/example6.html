@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div{
+            height:60px;
+            width:10%;
+            background-color: crimson;
+            margin:10px;
+        }
+        #demo1{
+            animation-name: myanimate1;
+            animation-duration: 5s;
+            animation-timing-function: ease;
+        }
+        @keyframes myanimate1 {
+            0%{
+                width:10%;
+            }
+            100%{
+                width:50%;
+            }
+        }
+        #demo2{
+            animation-name: myanimate2;
+            animation-duration: 5s;
+            animation-timing-function: ease-in;
+        }
+        @keyframes myanimate2 {
+            0%{
+                width:10%;
+            }
+            100%{
+                width:50%;
+            }
+        }
+        #demo3{
+            animation-name: myanimate3;
+            animation-duration: 5s;
+            animation-timing-function: ease-in-out;
+        }
+        @keyframes myanimate3 {
+            0%{
+                width:10%;
+            }
+            100%{
+                width:50%;
+            }
+        }
+        #demo4{
+            animation-name: myanimate4;
+            animation-duration: 5s;
+            animation-timing-function: ease-out;
+        }
+        @keyframes myanimate4 {
+            0%{
+                width:10%;
+            }
+            100%{
+                width:50%;
+            }
+        }
+
+</style>
+</head>
+<body>
+    <div id="demo1">animation-timing-function: ease;</div>
+    <div id="demo2">animation-timing-function: ease-in;</div>
+    <div id="demo3">animation-timing-function: ease-in-out;</div>
+    <div id="demo4">animation-timing-function: ease-out;</div>
+</body>
+</html>

@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div{
+            height:100px;
+            width:100px;
+            border-radius: 50%;
+            background-color: orange;
+            animation-name: myanimate;
+            animation-duration: 8s;
+            animation-iteration-count: infinite;
+            position: absolute;
+            /* animation-direction: alternate; */
+            animation-direction: alternate-reverse;
+        }
+        @keyframes myanimate {
+            0%{
+                top:0px;
+                left:0px;
+                background-color: blue;
+            }
+            /* 25%{
+                top:0px;
+                left:400px;
+                background-color: orange;
+            } */
+            50%{
+                top:400px;
+                left:400px;
+                background-color: red;
+            }
+            60%{
+                top:200px;
+                left:400px;
+                background-color: red;
+            }
+            70%{
+                top:400px;
+                left:400px;
+                background-color: red;
+            }
+            75%{
+                top:400px;
+                left:0px;
+                background-color: pink;
+            }
+            100%{
+                top:0px;
+                left:0px;
+                background-color: grey;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div></div>
+</body>
+</html>
