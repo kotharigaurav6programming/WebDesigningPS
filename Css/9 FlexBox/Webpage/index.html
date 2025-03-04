@@ -4,48 +4,29 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <style>
-        .navigation{
-            list-style: none;
-            background-color: dodgerblue;
-            font-size: 22px;
-            font-family: cursive;
-            padding: 10px;
-            display: flex;
-            justify-content: flex-end;
-        }
-        .navigation a{
-            text-decoration: none;
-            color:white;
-            margin: 10px;
-        }
-        @media screen and (max-width:900px){
-            .navigation{
-                justify-content: center;
-            }
-        }
-        @media screen and (max-width:650px){
-            .navigation{
-                flex-direction: column;
-                row-gap: 10px;
-                align-items: center;
-            }
-        }
-        .demo{
-            display: flex;
-        }
-    </style>
-</head>
+    <link rel="stylesheet" href="public/css/style.css">
+    </head>
 <body>
-    <ul class="navigation">
-        <li><a href="">Home</a></li>
-        <li><a href="">Services</a></li>
-        <li><a href="">Product</a></li>
-        <li><a href="">About</a></li>
-        <li><a href="">Contact</a></li>
-        <li><a href="">FAQ</a></li>
-        <li><a href="">Account</a></li>
-    </ul>
+    <div id="nav">
+      <ul class="navigation">
+          <li><a href="">Home</a></li>
+          <li><a href="">Services</a></li>
+          <li><a href="">Product</a></li>
+          <li><a href="">About</a></li>
+          <li><a href="">Contact</a></li>
+          <li><a href="">FAQ</a></li>
+          <li><a href="">Account</a></li>
+      </ul>
+    </div>  
+    <div id="banner">
+      <img src="public/images/banner.jpg" id="bannerImage" alt="">
+    </div>
+    <div id="box">
+        <div id="box1">Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet, aliquam mollitia laboriosam deleniti libero sunt alias vitae? Soluta cupiditate architecto provident fuga quaerat dignissimos ipsum! Cumque corporis dolor eius excepturi.</div>
+        <div id="box2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet, aliquam mollitia laboriosam deleniti libero sunt alias vitae? Soluta cupiditate architecto provident fuga quaerat dignissimos ipsum! Cumque corporis dolor eius excepturi.</div>
+        <div id="box3">Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet, aliquam mollitia laboriosam deleniti libero sunt alias vitae? Soluta cupiditate architecto provident fuga quaerat dignissimos ipsum! Cumque corporis dolor eius excepturi.</div>
+        <div id="box4">Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet, aliquam mollitia laboriosam deleniti libero sunt alias vitae? Soluta cupiditate architecto provident fuga quaerat dignissimos ipsum! Cumque corporis dolor eius excepturi.</div>
+    </div>
 </body>
 </html>
 <!-- 
