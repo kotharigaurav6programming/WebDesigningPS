@@ -1,0 +1,113 @@
+#nav{
+    height:60px;
+    background-color: crimson;
+}
+#nav ul{
+    padding-top: 15px;
+    list-style: none;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+#nav ul li a{
+    font-size: 22px;
+    color:white;
+    font-family: candara;
+    text-decoration: none;
+}
+    
+#hum, #humber{
+    display: none;
+}
+
+@media screen and (max-width:400px){
+    #nav{
+        height:auto;
+        float:left;
+        background-color: crimson;
+        width:100%;
+    }
+    #nav ul{
+        padding-top: 15px;
+        list-style: none;
+        display: flex;
+        flex-direction: column;
+    }
+    #nav ul{
+        display: none;
+    }
+    #humber{
+        display: block;
+        height: 40px;
+        float: right;
+    }
+    #hum:checked ~ ul{
+        /* display: block; */
+        display:flex;
+    }
+} 
+     
+/* 
+     #nav {
+        height: 60px;
+        background-color: crimson;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 0 20px;
+    }
+    
+    #nav ul {
+        display: flex;
+        list-style: none;
+        padding: 0;
+        margin: 0;
+    }
+    
+    #nav ul li {
+        margin: 0 20px;
+    }
+    
+    #nav ul li a {
+        font-size: 22px;
+        color: white;
+        font-family: candara;
+        text-decoration: none;
+    }
+    
+    #hum, #humber {
+        display: none;
+    }
+    
+    @media screen and (max-width: 400px) {
+        #nav {
+            height: auto;
+            flex-direction: column;
+            align-items: flex-start;
+            width: 100%;
+            padding: 10px;
+        }
+    
+        #humber {
+            display: block;
+            align-self: flex-end;
+            height: 40px;
+            cursor: pointer;
+        }
+    
+        #nav ul {
+            display: none;
+            flex-direction: column;
+            width: 100%;
+            padding-top: 10px;
+        }
+    
+        #nav ul li {
+            margin: 10px 0;
+        }
+    
+        #hum:checked ~ ul {
+            display: flex;
+        }
+    }
+     */

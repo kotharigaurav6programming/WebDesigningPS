@@ -1,0 +1,62 @@
+#nav{
+    height:60px;
+    background-color: crimson;
+}
+#nav ul{
+    padding-top: 15px;
+    list-style: none;
+}
+#nav ul li{
+    display: inline;
+}
+#nav ul li a{
+    font-size: 22px;
+    color:white;
+    font-family: candara;
+    text-decoration: none;
+    margin: 38px;
+}
+#hum, #humber{
+    display: none;
+}
+
+@media screen and (max-width:400px){
+    #nav{
+        height:auto;
+        float: left;
+        background-color: crimson;
+        width: 100%;
+    }
+    #nav ul{
+        padding-top: 15px;
+        list-style: none;
+    }
+    #nav ul li{
+        display: block;
+    }
+    #nav ul li a{
+        font-size: 22px;
+        color:white;
+        font-family: candara;
+        text-decoration: none;
+        margin: 38px;
+    }
+    #nav ul{
+        display: none;
+    }    
+    
+    #humber{
+        display: block;
+        height: 40px;
+        float: right;
+        /* left:330px;
+        top:20px;
+        position: absolute; */
+    }
+    #hum:checked ~ ul{
+        display: block;
+        margin-top:-10px;
+        margin-left: -45px;
+        line-height: 30px;
+    }
+}
