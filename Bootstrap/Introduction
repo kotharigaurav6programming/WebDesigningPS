@@ -1,0 +1,16 @@
+Bootstrap
+---------
+1. Bootstrap is a Html, css and javascript framework, used to create a responsive web page.
+
+2. We can also use media query to make our page responsive but the best choice to make web page responsive is BOOTSTRAP.
+
+3. Bootstrap works on classes. There are several classes available to make html elements responsive like we have button class to make button attractive , container class to make container responsive, image class to make images responsive and many more.
+
+4. Internally bootstrap also uses media query to make web page responsive.
+
+5. Bootstrap is an open source and cross platform, which means we can download bootstrap from internet free of cost.
+
+6. Bootstrap is compatible with almost all modern web browsers.
+
+7. Bootstrap provides consistent design.
+8. There are several versions of Bootstrap is present in the market, out of which we go through with Bootstrap3,4 and 5.
