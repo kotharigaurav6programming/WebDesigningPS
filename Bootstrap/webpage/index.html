@@ -2,91 +2,210 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <!-- Latest compiled and minified CSS -->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@3.3.7/dist/css/bootstrap.min.css"
-        integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <!-- Latest compiled and minified CSS -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@3.3.7/dist/css/bootstrap.min.css"
+    integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
 
-    <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+  <script src="https://code.jquery.com/jquery-3.7.1.min.js"
+    integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
 
-    <!-- Latest compiled and minified JavaScript -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@3.3.7/dist/js/bootstrap.min.js"
-        integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa"
-        crossorigin="anonymous"></script>
-        
+  <!-- Latest compiled and minified JavaScript -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@3.3.7/dist/js/bootstrap.min.js"
+    integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa"
+    crossorigin="anonymous"></script>
+
+  <style>
+    #demo {
+      color: white;
+    }
+
+    #demo:hover {
+      color: black;
+    }
+  </style>
 </head>
+
 <body>
-    <nav class="navbar navbar-default">
-        <div class="container-fluid" style="background-color: black;">
-          <!-- Brand and toggle get grouped for better mobile display -->
-          <div class="navbar-header">
-            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
-              <span class="sr-only">Toggle navigation</span>
-              <span class="icon-bar"></span>
-              <span class="icon-bar"></span>
-              <span class="icon-bar"></span>
-            </button>
-            <a class="navbar-brand" href="#" style="color:white">
-                <span class="glyphicon glyphicon-education" style="color:white"></span>
-                Tutorial</a>
+  <nav class="navbar navbar-default">
+    <div class="container-fluid" style="background-color: black;">
+      <!-- Brand and toggle get grouped for better mobile display -->
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse"
+          data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+          <span class="sr-only">Toggle navigation</span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        <a class="navbar-brand" href="#" style="color:white">
+          <span class="glyphicon glyphicon-education" style="color:white"></span>
+          Tutorial</a>
+      </div>
+
+      <!-- Collect the nav links, forms, and other content for toggling -->
+      <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+        <ul class="nav navbar-nav">
+          <li><a href="#" style="color:white">
+              <span class="glyphicon glyphicon-home" style="color:white"></span>
+              Home <span class="sr-only">(current)</span></a></li>
+          <li><a href="#" style="color:white">
+              <span class="glyphicon glyphicon-book" style="color:white"></span>
+              Exams</a></li>
+          <li class="dropdown" style="color:white;">
+            <a href="#" class="dropdown-toggle" data-toggle="dropdown" style="color:white;background-color: black;">
+              <span class="glyphicon glyphicon-globe" style="color:white;"></span>
+              Courses <span class="caret"></span></a>
+            <ul class="dropdown-menu" style="background-color: black;">
+              <li><a href="#" id="demo">C Language</a></li>
+              <li role="separator" class="divider"></li>
+              <li><a href="#" id="demo">C++ Language</a></li>
+              <li role="separator" class="divider"></li>
+              <li><a href="#" id="demo">Java Programming Language</a></li>
+              <li role="separator" class="divider"></li>
+              <li><a href="#" id="demo">Mern Stack</a></li>
+              <li role="separator" class="divider"></li>
+              <li><a href="#" id="demo">Data Analytics</a></li>
+            </ul>
+          </li>
+        </ul>
+        <form class="navbar-form navbar-left">
+          <div class="form-group">
+            <input type="text" class="form-control" placeholder="Search">
           </div>
-      
-          <!-- Collect the nav links, forms, and other content for toggling -->
-          <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-            <ul class="nav navbar-nav">
-              <li><a href="#" style="color:white">
-                <span class="glyphicon glyphicon-home" style="color:white"></span>
-                Home <span class="sr-only">(current)</span></a></li>
-              <li><a href="#" style="color:white">
-                <span class="glyphicon glyphicon-book" style="color:white"></span>
-                Exams</a></li>
-              <li class="dropdown" style="color:white">
-                <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false" style="color:white">
-                    <span class="glyphicon glyphicon-globe" style="color:white"></span>
-                    Courses <span class="caret"></span></a>
-                <ul class="dropdown-menu">
-                  <li><a href="#">C Language</a></li>
-                  <li role="separator" class="divider"></li>
-                  <li><a href="#">C++ Language</a></li>
-                  <li role="separator" class="divider"></li>
-                  <li><a href="#">Java Programming Language</a></li>
-                  <li role="separator" class="divider"></li>
-                  <li><a href="#">Mern Stack</a></li>
-                  <li role="separator" class="divider"></li>
-                  <li><a href="#">Data Analytics</a></li>
-                </ul>
-              </li>
-            </ul>
-            <form class="navbar-form navbar-left">
-              <div class="form-group">
-                <input type="text" class="form-control" placeholder="Search">
+          <button type="submit" class="btn btn-primary">
+            <span class="glyphicon glyphicon-search"></span>
+            Submit</button>
+        </form>
+        <ul class="nav navbar-nav navbar-right">
+          <li><a href="#" style="color:white" data-toggle="modal" data-target="#myModal">
+              <span class="glyphicon glyphicon-envelope" style="color:white"></span>
+              FAQ</a>
+            <!-- modal content starts -->
+            <!-- Button trigger modal -->
+            <!-- Modal -->
+            <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+              <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span
+                        aria-hidden="true">&times;</span></button>
+                    <h4 class="modal-title" id="myModalLabel">FAQ</h4>
+                  </div>
+                  <div class="modal-body" style="cursor: pointer;">
+
+                    <p data-toggle="collapse" data-target="#demo1"> <big><b>+ Can I get a certificate after completing a tutorial? </b></big></p>
+                    <p id="demo1" class="collapse">
+                      Yes, many platforms provide certificates, especially paid ones like Udemy, Coursera, and LinkedIn Learning.
+                    </p>
+
+                    <p data-toggle="collapse" data-target="#demo2"> <big><b>+ What types of tutorials are available?</b></big></p>
+                    <p id="demo2" class="collapse">
+                      a. Text-based (articles, blogs, documentation) <br>
+                      b. Video-based (YouTube, online courses) <br>
+                      c. Interactive (quizzes, hands-on coding) <br>
+                      d. Live sessions (webinars, classroom training)
+                    </p>
+
+                    <p data-toggle="collapse" data-target="#demo3"> <big><b>+ How long does it take to complete a tutorial?</b></big></p>
+                    <p id="demo3" class="collapse">
+                      It depends on the topic and complexity. Some tutorials take a few hours, while others require weeks of practice.
+                    </p>
+
+                    <p data-toggle="collapse" data-target="#demo4"> <big><b>+ Can I create and sell my own tutorials?</b></big></p>
+                    <p id="demo4" class="collapse">
+                      a. Create a YouTube channel for free tutorials. <br>
+                      b. Sell courses on Udemy, Teachable, or your website. <br>
+                      c. Offer live training or coaching sessions.
+                    </p>
+
+                    <p data-toggle="collapse" data-target="#demo5"> <big><b>+ What if I don’t understand something in the tutorial?</b></big></p>
+                    <p id="demo5" class="collapse">
+                      a. Re-watch or re-read the content. <br>
+                      b. Ask in the tutorial’s comments or discussion section. <br>
+                      c. Search for additional explanations online.
+                    </p>
+
+
+                  </div>
+                  <div class="modal-footer">
+                    <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                  </div>
+                </div>
               </div>
-              <button type="submit" class="btn btn-primary">
-                <span class="glyphicon glyphicon-search"></span>
-                Submit</button>
-            </form>
-            <ul class="nav navbar-nav navbar-right">
-              <li><a href="#" style="color:white">
-                <span class="glyphicon glyphicon-envelope" style="color:white"></span>
-                FAQ</a></li>
-              <li class="dropdown">
-                <a href="#" class="dropdown-toggle" style="color:white" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
-                    <span class="glyphicon glyphicon-user" style="color:white"></span>
-                    Account <span class="caret"></span></a>
-                <ul class="dropdown-menu">
-                  <li><a href="#">
-                    <span class="glyphicon glyphicon-log-in"></span>
-                    Login</a></li>
-                  <li><a href="#">
-                    <span class="glyphicon glyphicon-registration-mark"></span>
-                    Register</a></li>
-                </ul>
-              </li>
+            </div>
+            <!-- modal content ends -->
+          </li>
+
+          <li class="dropdown">
+            <a href="#" class="dropdown-toggle" style="color:white; background-color: black;" data-toggle="dropdown">
+              <span class="glyphicon glyphicon-user" style="color:white"></span>
+              Account <span class="caret"></span></a>
+            <ul class="dropdown-menu" style="background-color: black;">
+              <li><a href="#" id="demo">
+                  <span class="glyphicon glyphicon-log-in"></span>
+                  Login</a></li>
+              <li role="separator" class="divider"></li>
+              <li><a href="#" id="demo">
+                  <span class="glyphicon glyphicon-registration-mark"></span>
+                  Register</a></li>
             </ul>
-          </div><!-- /.navbar-collapse -->
-        </div><!-- /.container-fluid -->
-      </nav> 
+          </li>
+
+        </ul>
+      </div><!-- /.navbar-collapse -->
+    </div><!-- /.container-fluid -->
+  </nav>
+  <div id="row" style="margin-top: -20px;">
+    <div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
+      <!-- Indicators -->
+      <ol class="carousel-indicators">
+        <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
+        <li data-target="#carousel-example-generic" data-slide-to="1"></li>
+        <li data-target="#carousel-example-generic" data-slide-to="2"></li>
+      </ol>
+    
+      <!-- Wrapper for slides -->
+      <div class="carousel-inner" role="listbox">
+        <div class="item active">
+          <img src="PVLndr.jpg" alt="...">
+          <div class="carousel-caption">
+          </div>
+        </div>
+        <div class="item">
+          <img src="PVLndr.jpg" alt="...">
+          <div class="carousel-caption">
+          </div>
+        </div>
+        <div class="item">
+          <img src="PVLndr.jpg" alt="...">
+          <div class="carousel-caption">
+          </div>
+        </div>
+      
+      </div>
+    
+      <!-- Controls -->
+      <a class="left carousel-control" href="#carousel-example-generic" role="button" data-slide="prev">
+        <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+        <span class="sr-only">Previous</span>
+      </a>
+      <a class="right carousel-control" href="#carousel-example-generic" role="button" data-slide="next">
+        <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+        <span class="sr-only">Next</span>
+      </a>
+    </div>
+  </div>
+  <div class="jumbotron" style="padding: 30px; color: black;">
+    <h2>Welcome to Tutorials World</h2>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque at, delectus saepe ut sint rerum odio deserunt iure nesciunt perferendis repellat sit ullam sequi quo dolores? Dolores in beatae fuga quos perspiciatis nobis, maxime nulla. Maiores soluta inventore tempora rerum iure, a vero voluptatum nulla repellat assumenda adipisci molestiae animi.</p>
+    <button class="glyphicon glyphicon-danger">Connect with Us</button>
+    <button class="glyphicon glyphicon-success">Email us to get Quote</button>
+    
+  </div>
+
 </body>
+
 </html>
