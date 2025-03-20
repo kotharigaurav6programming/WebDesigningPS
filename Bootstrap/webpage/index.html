@@ -17,6 +17,12 @@
     integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa"
     crossorigin="anonymous"></script>
 
+
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css" rel="stylesheet">
+
+    <link rel="stylesheet" href="services.css">
+  <!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"> -->
+
   <style>
     #demo {
       color: white;
@@ -25,6 +31,36 @@
     #demo:hover {
       color: black;
     }
+    #box{
+    height: auto;
+    width: 100%;
+    padding: 1%;
+    float: left;
+    text-align: justify;
+}
+#box1,#box2,#box3,#box4{
+    height: auto;
+    width: 23%;
+    background-color: skyblue;
+    color:black;
+    float:left;
+    margin: 1%;
+    padding: 2%;
+}
+#boxImg{
+  width: 100%;
+}
+@media screen and (max-width:991px){
+    #box1,#box2,#box3,#box4{
+        width: 48%;
+    }
+}
+@media screen and (max-width:567px){
+    #box1,#box2,#box3,#box4{
+        width: 98%;
+    }
+}
+    
   </style>
 </head>
 
@@ -96,12 +132,15 @@
                   </div>
                   <div class="modal-body" style="cursor: pointer;">
 
-                    <p data-toggle="collapse" data-target="#demo1"> <big><b>+ Can I get a certificate after completing a tutorial? </b></big></p>
+                    <p data-toggle="collapse" data-target="#demo1"> <big><b>+ Can I get a certificate after completing a
+                          tutorial? </b></big></p>
                     <p id="demo1" class="collapse">
-                      Yes, many platforms provide certificates, especially paid ones like Udemy, Coursera, and LinkedIn Learning.
+                      Yes, many platforms provide certificates, especially paid ones like Udemy, Coursera, and LinkedIn
+                      Learning.
                     </p>
 
-                    <p data-toggle="collapse" data-target="#demo2"> <big><b>+ What types of tutorials are available?</b></big></p>
+                    <p data-toggle="collapse" data-target="#demo2"> <big><b>+ What types of tutorials are
+                          available?</b></big></p>
                     <p id="demo2" class="collapse">
                       a. Text-based (articles, blogs, documentation) <br>
                       b. Video-based (YouTube, online courses) <br>
@@ -109,19 +148,23 @@
                       d. Live sessions (webinars, classroom training)
                     </p>
 
-                    <p data-toggle="collapse" data-target="#demo3"> <big><b>+ How long does it take to complete a tutorial?</b></big></p>
+                    <p data-toggle="collapse" data-target="#demo3"> <big><b>+ How long does it take to complete a
+                          tutorial?</b></big></p>
                     <p id="demo3" class="collapse">
-                      It depends on the topic and complexity. Some tutorials take a few hours, while others require weeks of practice.
+                      It depends on the topic and complexity. Some tutorials take a few hours, while others require
+                      weeks of practice.
                     </p>
 
-                    <p data-toggle="collapse" data-target="#demo4"> <big><b>+ Can I create and sell my own tutorials?</b></big></p>
+                    <p data-toggle="collapse" data-target="#demo4"> <big><b>+ Can I create and sell my own
+                          tutorials?</b></big></p>
                     <p id="demo4" class="collapse">
                       a. Create a YouTube channel for free tutorials. <br>
                       b. Sell courses on Udemy, Teachable, or your website. <br>
                       c. Offer live training or coaching sessions.
                     </p>
 
-                    <p data-toggle="collapse" data-target="#demo5"> <big><b>+ What if I don’t understand something in the tutorial?</b></big></p>
+                    <p data-toggle="collapse" data-target="#demo5"> <big><b>+ What if I don’t understand something in
+                          the tutorial?</b></big></p>
                     <p id="demo5" class="collapse">
                       a. Re-watch or re-read the content. <br>
                       b. Ask in the tutorial’s comments or discussion section. <br>
@@ -166,7 +209,7 @@
         <li data-target="#carousel-example-generic" data-slide-to="1"></li>
         <li data-target="#carousel-example-generic" data-slide-to="2"></li>
       </ol>
-    
+
       <!-- Wrapper for slides -->
       <div class="carousel-inner" role="listbox">
         <div class="item active">
@@ -184,9 +227,9 @@
           <div class="carousel-caption">
           </div>
         </div>
-      
+
       </div>
-    
+
       <!-- Controls -->
       <a class="left carousel-control" href="#carousel-example-generic" role="button" data-slide="prev">
         <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
@@ -199,13 +242,171 @@
     </div>
   </div>
   <div class="jumbotron" style="padding: 30px; color: black;">
-    <h2>Welcome to Tutorials World</h2>
-    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque at, delectus saepe ut sint rerum odio deserunt iure nesciunt perferendis repellat sit ullam sequi quo dolores? Dolores in beatae fuga quos perspiciatis nobis, maxime nulla. Maiores soluta inventore tempora rerum iure, a vero voluptatum nulla repellat assumenda adipisci molestiae animi.</p>
-    <button class="glyphicon glyphicon-danger">Connect with Us</button>
-    <button class="glyphicon glyphicon-success">Email us to get Quote</button>
-    
+    <h3>Welcome to Tutorials World</h3>
+    <p style="font-size: 16px; text-align: justify;">Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque at,
+      delectus saepe ut sint rerum odio deserunt iure nesciunt perferendis repellat sit ullam sequi quo dolores? Dolores
+      in beatae fuga quos perspiciatis nobis, maxime nulla. Maiores soluta inventore tempora rerum iure, a vero
+      voluptatum nulla repellat assumenda adipisci molestiae animi. Lorem ipsum, dolor sit amet consectetur adipisicing
+      elit. Totam, optio!</p>
+    <button class="glyphicon glyphicon-phone btn btn-success">
+      Connect with Us</button>
+    <button class="glyphicon glyphicon-envelope btn btn-danger">
+      Email to get Quote</button>
   </div>
 
-</body>
+  <div id="box"> 
+    <div id="box1">
+      <img src="PVLndr.jpg" id="boxImg" alt="">
+      <br><br>
+      Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sapiente eum veniam veritatis reiciendis, rerum repellendus accusamus tempore voluptatem omnis obcaecati. Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit officia doloribus, nemo beatae autem vero quaerat hic consequatur, error deleniti, impedit maxime architecto! Praesentium reiciendis, debitis ab inventore natus consectetur!</div>
+    <div id="box2">
+      <img src="PVLndr.jpg" id="boxImg" alt="">
+      <br><br>
+      Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sapiente eum veniam veritatis reiciendis, rerum repellendus accusamus tempore voluptatem omnis obcaecati. Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit officia doloribus, nemo beatae autem vero quaerat hic consequatur, error deleniti, impedit maxime architecto! Praesentium reiciendis, debitis ab inventore natus consectetur!</div>
+    <div id="box3">
+      <img src="PVLndr.jpg" id="boxImg" alt="">
+      <br><br>
+      Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sapiente eum veniam veritatis reiciendis, rerum repellendus accusamus tempore voluptatem omnis obcaecati. Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit officia doloribus, nemo beatae autem vero quaerat hic consequatur, error deleniti, impedit maxime architecto! Praesentium reiciendis, debitis ab inventore natus consectetur!</div>
+    <div id="box4">
+      <img src="PVLndr.jpg" id="boxImg" alt="">
+      <br><br>
+      Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sapiente eum veniam veritatis reiciendis, rerum repellendus accusamus tempore voluptatem omnis obcaecati. Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit officia doloribus, nemo beatae autem vero quaerat hic consequatur, error deleniti, impedit maxime architecto! Praesentium reiciendis, debitis ab inventore natus consectetur!</div>
+</div>
 
+<section class="section-big main-color" style="clear: both;">
+  <br><br>
+  <div class="container">
+
+      <div class="row">
+         <div class="col-md-12 pb-20 text-center"> 
+            <h2 class="section-title mb-10"><span> Some <strong class="primary-color">Vertex</strong> Core Featuress </span></h2>
+           <p class="section-sub-title">
+               We are a passionate digital design agency that specializes in beautiful and easy-to- <br>
+               use digital design &amp; web development services.
+            </p>
+            <div class="exp-separator center-separator">
+               <div class="exp-separator-inner">
+               </div>
+            </div>
+
+         </div>
+      </div>
+
+      <div class="row">
+         <div class="col-md-4">
+            <ul class="i-list medium">
+               <li class="i-list-item">
+                  <div class="icon"> <i class="fa fa-desktop"></i> </div>
+
+                  <div class="icon-content">
+                     <h3 class="title">Fully Responsive Design</h3>
+                     <p class="sub-title">
+                        Aenean vulputate eleifend tellus. Aenean leo ligula, porttitor eu,
+                        consequat vitae, eleifend ac, enim ante, dapibus in.
+                     </p>
+                  </div>
+                  <div class="iconlist-timeline"></div>
+               </li>
+               <li class="i-list-item">
+                  <div class="icon"> <i class="fa fa-code"></i> </div>
+
+                  <div class="icon-content">
+                     <h3 class="title">Easy &amp; Clean Code</h3>
+                     <p>
+                        Aenean vulputate tellus. Aenean leo ligula, porttitor eu,
+                        consequat vitae, eleifend ac, enim. Aliquam lorem ante, dapibus in.
+                     </p>
+                  </div>
+                  <div class="iconlist-timeline"></div>
+               </li>
+               <li class="i-list-item">
+                  <div class="icon"> <i class="fa fa-paper-plane"></i> </div>
+
+                  <div class="icon-content">
+                     <h3 class="title">24/7 Customer Support</h3>
+                     <p>
+                        Aenean vulputate eleifend tellus. Aenean leo ligula, porttitor eu,
+                        consequat, eleifend ac, enim lorem ante, dapibus in.
+                     </p>
+                  </div>
+               </li>
+            </ul>
+         </div>
+         <div class="col-md-4">
+            <ul class="i-list medium">
+               <li class="i-list-item">
+                  <div class="icon"> <i class="fa fa-diamond"></i> </div>
+                  <div class="icon-content">
+                     <h3 class="title">Endless Possibilites</h3>
+                     <p class="sub-title">
+                        Aenean vulputate eleifend tellus. Aenean leo ligula, porttitor eu,
+                        consequat vitae, eleifend Aliquam lorem ante, dapibus in.
+                     </p>
+                  </div>
+                  <div class="iconlist-timeline"></div>
+               </li>
+               <li class="i-list-item">
+                  <div class="icon"> <i class="fa fa-recycle"></i> </div>
+                  <div class="icon-content">
+                     <h3 class="title">Free Lifetime Updates</h3>
+                     <p>
+                        Aenean eleifend tellus. Aenean leo ligula, porttitor eu
+                        consequat vitae, eleifend ac, enim. Aliquam lorem ante, dapibus in.
+                     </p>
+                  </div>
+                  <div class="iconlist-timeline"></div>
+               </li>
+               <li class="i-list-item">
+                  <div class="icon"> <i class="fa fa-check"></i> </div>
+                  <div class="icon-content">
+                     <h3 class="title">Clean &amp; Modern Design</h3>
+                     <p>
+                        Aenean vulputate eleifend tellus. Aenean leo ligula, porttitor eu,
+                        consequat vitae, eleifend enim lorem ante, dapibus in.
+                     </p>
+                  </div>
+               </li>
+            </ul>
+         </div>
+         <div class="col-md-4">
+            <ul class="i-list medium">
+               <li class="i-list-item">
+                  <div class="icon"> <i class="fa fa-codepen"></i> </div>
+                  <div class="icon-content">
+                     <h3 class="title">Useful Shortcodes</h3>
+                     <p class="sub-title">
+                        Aenean vulputate eleifend tellus. Aenean leo ligula, porttitor eu,
+                        consequat vitae, eleifend ac, enim. Aliquam lorem ante.
+                     </p>
+                  </div>
+                  <div class="iconlist-timeline"></div>
+               </li>
+               <li class="i-list-item">
+                  <div class="icon"> <i class="fa fa-newspaper-o"></i> </div>
+                  <div class="icon-content">
+                     <h3 class="title">Multipurpose Concept</h3>
+                     <p>
+                        Aenean vulputate eleifend tellus ligula, porttitor eu,
+                        consequat vitae, eleifend ac, enim. Aliquam lorem ante, dapibus in.
+                     </p>
+                  </div>
+                  <div class="iconlist-timeline"></div>
+               </li>
+               <li class="i-list-item">
+                  <div class="icon"> <i class="fa fa-heart-o"></i> </div>
+                  <div class="icon-content">
+                     <h3 class="title">Crafted With Love</h3>
+                     <p>
+                        Aenean vulputate eleifend tellus. Aenean leo ligula, porttitor eu,
+                        consequat vitae, eleifend ac lorem ante, dapibus in.
+                     </p>
+                  </div>
+               </li>
+            </ul>
+         </div>
+      </div>
+   </div>
+</section>
+
+</body>
 </html>
