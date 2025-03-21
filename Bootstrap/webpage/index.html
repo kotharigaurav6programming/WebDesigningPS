@@ -22,7 +22,8 @@
 
     <link rel="stylesheet" href="services.css">
   <!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"> -->
-
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.1/css/all.min.css" integrity="sha256-2XFplPlrFClt0bIdPgpz8H7ojnk10H69xRqd9+uTShA=" crossorigin="anonymous" />
+<link rel="stylesheet" href="footer.css">
   <style>
     #demo {
       color: white;
@@ -87,9 +88,9 @@
           <li><a href="#" style="color:white">
               <span class="glyphicon glyphicon-home" style="color:white"></span>
               Home <span class="sr-only">(current)</span></a></li>
-          <li><a href="#" style="color:white">
-              <span class="glyphicon glyphicon-book" style="color:white"></span>
-              Exams</a></li>
+          <li><a href="profile.html" style="color:white">
+              <span class="glyphicon glyphicon-user" style="color:white"></span>
+              Profile</a></li>
           <li class="dropdown" style="color:white;">
             <a href="#" class="dropdown-toggle" data-toggle="dropdown" style="color:white;background-color: black;">
               <span class="glyphicon glyphicon-globe" style="color:white;"></span>
@@ -191,12 +192,62 @@
                   <span class="glyphicon glyphicon-log-in"></span>
                   Login</a></li>
               <li role="separator" class="divider"></li>
-              <li><a href="#" id="demo">
+              <li><a href="#" id="demo" data-toggle="modal" data-target="#myModal1">
                   <span class="glyphicon glyphicon-registration-mark"></span>
                   Register</a></li>
             </ul>
           </li>
+          <!-- modal starts -->
+<!-- Modal -->
+<div class="modal fade" id="myModal1" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+        <h4 class="modal-title" id="myModalLabel">Enroll For Free Course</h4>
+      </div>
+      <div class="modal-body">
+        
+        <form>
+          <div class="form-group">
+            <label for="exampleInputUsername">Enter Username</label>
+            <input type="text" class="form-control" id="exampleInputUsername" placeholder="Enter Username">
+          </div>
+          <div class="form-group">
+            <label for="exampleInputEmail1">Email address</label>
+            <input type="email" class="form-control" id="exampleInputEmail1" placeholder="Enter Email">
+          </div>
+          <div class="form-group">
+            <label for="exampleInputPassword1">Password</label>
+            <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Enter Password">
+          </div>
+          <div class="form-group">
+            <label for="exampleInputContact">Enter Contact</label>
+            <input type="text" class="form-control" id="exampleInputContact" placeholder="Enter Contact">
+          </div>
+          <div class="form-group">
+            <label for="exampleInputAddress">Enter Address</label>
+            <textarea class="form-control" id="exampleInputAddress" placeholder="Enter Address"></textarea>
+          </div>
+          <div class="form-group">
+            <label for="exampleInputFile">File input</label>
+            <input type="file" id="exampleInputFile">
+            <p class="help-block">Example block-level help text here.</p>
+          </div>
+          <div class="checkbox">
+            <label>
+              <input type="checkbox"> Check me out
+            </label>
+          </div>
+          <button type="submit" class="btn btn-primary">Submit</button>
+        </form>
 
+      </div>
+      
+    </div>
+  </div>
+</div>
+          <!-- modal ends -->
         </ul>
       </div><!-- /.navbar-collapse -->
     </div><!-- /.container-fluid -->
@@ -408,5 +459,142 @@
    </div>
 </section>
 
+<footer class="bg-dark-gradient footer">
+    <div class="footer-top">
+        <div class="container">
+            <div class="footer-border-bottom pb-6 mb-5">
+                <div class="row">
+                    <div class="col-lg-4 col-xl-3">
+                        <h4 class="text-white">
+                            Sign up to Get Latest Updates
+                        </h4>
+                    </div>
+                    <div class="col-lg-4 col-xl-6">
+                        <form class="d-flex flex-row mb-2 p-1 bg-white input-group">
+                            <input type="email" class="form-control rounded-0 border-0" placeholder="you@yoursite.com">
+                            <button class="btn btn-secondary rounded-0 flex-shrink-0" type="submit">Subscribe</button>
+                        </form>
+                    </div>
+                    <div class="col-lg-4 col-xl-3">
+                        <div class="text-lg-end text-white">
+                            <span class="h6">Call Us On</span><br>
+                            <span class="h3">1-800-222-000</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-sm-6 col-lg-3 my-4">
+                    <div class="mb-4">
+                        <img src="static/img/logo-light.svg" title="" alt="">
+                    </div>
+                    <div class="text-white-65 mb-4 text-white">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod.</div>
+                    <div class="nav footer-socila-icon">
+                        <a href="#">
+<i class="fab fa-facebook-f"></i>
+</a>
+                        <a href="#">
+<i class="fab fa-twitter"></i>
+</a>
+                        <a href="#">
+<i class="fab fa-instagram"></i>
+</a>
+                        <a href="#">
+<i class="fab fa-linkedin-in"></i>
+</a>
+                    </div>
+                </div>
+                <div class="col-sm-6 col-lg-2 my-4">
+                    <h5 class="text-white h6 mb-4">Customer</h5>
+                    <ul class="list-unstyled white-link footer-links">
+                        <li>
+                            <a href="#">Get Corpo</a>
+                        </li>
+                        <li>
+                            <a href="#">Documentation</a>
+                        </li>
+                        <li>
+                            <a href="#">Help center</a>
+                        </li>
+                        <li>
+                            <a href="#">Pricing</a>
+                        </li>
+                        <li>
+                            <a href="#">Contact us</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-sm-6 col-lg-2 my-4">
+                    <h5 class="text-white h6 mb-4">Product</h5>
+                    <ul class="list-unstyled white-link footer-links">
+                        <li>
+                            <a href="#">Portfolio</a>
+                        </li>
+                        <li>
+                            <a href="#">Blog</a>
+                        </li>
+                        <li>
+                            <a href="#">Join our team</a>
+                        </li>
+                        <li>
+                            <a href="#">Elements</a>
+                        </li>
+                        <li>
+                            <a href="#">Products</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-sm-6 col-lg-2 my-4">
+                    <h5 class="text-white h6 mb-4">Company</h5>
+                    <ul class="list-unstyled white-link footer-links">
+                        <li>
+                            <a href="#">About</a>
+                        </li>
+                        <li>
+                            <a href="#">Careers</a>
+                        </li>
+                        <li>
+                            <a href="#">Legal &amp; Security</a>
+                        </li>
+                        <li>
+                            <a href="#">Terms of use</a>
+                        </li>
+                        <li>
+                            <a href="#">We're hiring!</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-sm-6 col-lg-3 my-4">
+                    <h5 class="text-white h6 mb-4">Company</h5>
+                    <div class="white-link">
+                        <div class="d-flex pb-3">
+                            <div class="avatar avatar-lg rounded">
+                                <img src="https://bootdey.com/img/Content/avatar/avatar1.png" title="" alt="">
+                            </div>
+                            <div class="col ps-3">
+                                <small class="text-white-65">29 March 2021</small>
+                                <h6 class="font-w-500 h6 m-0"><a class="text-white" href="#">Markdown Language Sample Blog Post Styling</a></h6>
+                            </div>
+                        </div>
+                        <div class="d-flex">
+                            <div class="avatar avatar-lg rounded">
+                                <img src="https://bootdey.com/img/Content/avatar/avatar2.png" title="" alt="">
+                            </div>
+                            <div class="col ps-3">
+                                <small class="text-white-65">29 March 2021</small>
+                                <h6 class="font-w-500 h6 m-0"><a class="text-white" href="#">Markdown Language Sample Blog Post Styling</a></h6>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="footer-bottom footer-border-top light py-3">
+        <div class="container text-center">
+            <p class="m-0">© 2021 copyright <a href="#" class="text-reset text-white">Bootdey.com</a></p>
+        </div>
+    </div>
+</footer>
 </body>
 </html>
