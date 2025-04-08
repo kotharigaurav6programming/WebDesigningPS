@@ -1,0 +1,18 @@
+<!-- 
+document object deals with DOM
+window object deals with browser (BOM)
+
+JavaScript Popup's | JavaScript Dialog boxes
+    |-- alert()     |-- window.alert()
+    |-- confirm()   |-- window.confirm()
+    |-- prompt()    |-- window.prompt()
+-->
+
+<script>
+    var value = confirm("Do you want to continue ? ");
+    // document.write("value : "+value);
+    if(value)
+        alert("User wants to continue");
+    else
+        document.write("User discard request");
+</script>
