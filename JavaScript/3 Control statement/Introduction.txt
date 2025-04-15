@@ -34,4 +34,68 @@ There are 4 types of control statements :
             }
             
        iii. nested if else statement 
+         syntax I: 
+            if(condition){
+               .....
+            }else{
+               if(condition){
+                  .....
+               }else{
+                  .....
+               }
+            }
+
+         syntax II: 
+            if(condition){
+               if(condition){
+                  .....
+               }else{
+                  .....
+               }
+            }else{
+               .....
+            }
+
+         syntax III: 
+            if(condition){
+               if(condition){
+                  .....
+               }else{
+                  .....
+               }
+            }else{
+               if(condition){
+                  .....
+               }else{
+                  .....
+               }
+            }
+            
+
        iv. else if ladder
+
+       if(condition){
+         ....
+       }
+       else if(condition){
+         ....
+       }
+       else if(condition){
+         ....
+       }else{
+         ....
+       }
+
+Switch control statement
+------------------------
+Mainly works on the concept of menu based programming.
+Duplicate cases can be considered.
+syntax : 
+switch(variable | constant | expression){
+   case 1 : 
+      ....
+      break;
+   |    |
+   default : .......
+            break;
+}

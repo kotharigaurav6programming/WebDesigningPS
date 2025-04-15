@@ -1,0 +1,36 @@
+Events
+------
+Every action which can change the state of an object is known as event.
+    click(action) -------- Button (object)
+        |
+      Event
+
+<button onclick='myfun()'>
+          |        |
+          |     myfun is event handler function
+          |         
+     Event Handler
+
+Types of events : 
+    1. Mouse Event (Click Event) 
+    2. Key Event
+    3. Form Event 
+    4. Load|Unload Event
+--------------------------------------------
+In case of HTML 
+div, img, button, p = element
+<img src='' height='' width=''>
+<p align=''> 
+
+src, height,width,align = attributes 
+--------------------------------------------
+
+In case of JavaScript 
+div, img, button, p = object
+<img src='' height='' width=''>
+<p align=''> 
+
+src, height,width,align = properties 
+--------------------------------------------
+
+

@@ -1,0 +1,14 @@
+<script>
+    // program to print table of a number
+
+    var num = parseInt(prompt("Enter number"));
+    if(isNaN(num))
+        alert("Entered number is wrong");
+    else{
+        var i=1;
+        do{
+            document.write("<br>"+num+" x "+i+" = "+(num*i));
+            i++;
+        }while(i<=10);
+    }
+</script>

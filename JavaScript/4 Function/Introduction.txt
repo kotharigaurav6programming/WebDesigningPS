@@ -1,0 +1,89 @@
+Function : 
+Function is a self contained block of statement. Every function performs some specific task. 
+
+Types of function : 
+
+1. Library function | Standard function | In-built function | Built-In function | Pre-defined function  : Whose definition part is already defined. Ex : floor(), ceil(), pow(), sqrt(), parseInt() etc
+
+2. User defined function : Whose definition part is designed according to programming needs. Ex : Here we create custom functions.
+function demo(){}, function display(){} etc
+
+Advantages of function : 
+1. Reduces program size
+2. Increases code reusablity
+3. Debugging would be easier
+4. Reduces complexity
+5. We can create n number of functions
+6. We can call a function n number of times
+7. Reduces redundancy of code 
+
+Categories of function : 
+
+1. No argument No Return Type
+2. No argument With Return Type
+3. With argument No Return Type
+4. With argument With Return Type
+
+Note : 
+function calling <---------> calling function
+function definition <------> called function
+
+Way to define function in javascript : 
+--------------------------------------
+function_keyword function_name(){
+    .....
+    .....
+}
+
+function display(){
+    .....
+    .....
+}
+
+Whats new in JavaScript Function : 
+----------------------------------
+
+Function Expression
+
+function(){
+    ....
+    ....
+}
+
+Function Definition | Function Declaration
+
+function display(){
+    ......
+    ......
+}
+
+Anonymous function | variable function  | function expression 
+
+var addition = function(){
+    ......
+    ......
+}
+
+addition();
+
+Lambda expression | Arrow function 
+
+var addition = ()=>{
+    .....
+    .....
+}
+
+Immediately invoked arrow function 
+
+(()=>{
+    .....
+    .....
+})();
+
+Immediately invoked function expression
+
+(function(){
+    .....
+    .....
+})();
+

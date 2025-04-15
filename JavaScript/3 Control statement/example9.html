@@ -1,0 +1,24 @@
+<script>
+   var num1 = parseInt(prompt("Enter first number"));
+   var num2 = parseInt(prompt("Enter second number"));
+   
+   alert("Select any one code\n+ for add\n- for sub\n* for mul\n/ for div");
+   var code = prompt("Enter code");
+   switch(code){
+        case '+' : 
+            document.write("Add : "+(num1+num2));
+            break;
+        case '-' : 
+            document.write("Sub : "+(num1-num2));
+            break;
+        case '*' : 
+            document.write("Mul : "+(num1*num2));
+            break;
+        case '/' : 
+            document.write("Div : "+(num1/num2));
+            break;
+        default : 
+            document.write("Invalid");
+            break;
+    }
+</script>
