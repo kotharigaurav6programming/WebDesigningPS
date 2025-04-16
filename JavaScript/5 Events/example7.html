@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div{
+            float: left;
+        }
+        #demo1,#demo2,#demo3{
+            height: 250px;
+            width: 250px;
+            border-style: solid;
+            border-radius: 50%;
+        }
+    </style>
+    <script>
+        function changeColor(color,element){
+            var element = document.getElementById(element);
+            element.style.backgroundColor = color;
+        }
+    </script>
+</head>
+<body id="body">
+    <div>
+        <div id="demo1"></div>
+        <br>
+        <center>
+            <button onclick="changeColor('red','demo1')">Red</button>
+        </center>
+    </div>
+    <div>
+        <div id="demo2"></div>
+        <br>
+        <center>
+            <button onclick="changeColor('green','demo2')">Green</button>
+        </center>
+    </div>
+    <div>
+        <div id="demo3"></div>
+        <br>
+        <center>
+            <button onclick="changeColor('blue','demo3')">Blue</button>
+        </center>
+    </div>
+
+</body>
+</html>
+

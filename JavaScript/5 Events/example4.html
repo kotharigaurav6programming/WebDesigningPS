@@ -1,4 +1,4 @@
-<!-- <!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -9,14 +9,14 @@
             document.getElementById("show").innerHTML = new Date().toLocaleTimeString();
         }
         setInterval(showData,1000);
-        var arr = [];
+        var arr = '';
         function myFun(){
             var d = new Date();
-            var demo = document.getElementById("demo");
-            arr += d.toLocaleTimeString()+"<br>";
-            demo.innerHTML = arr;
+            arr = arr + d.toLocaleTimeString()+"<br>";
+            document.getElementById("demo").innerHTML = arr;
         }
     </script>
+
 </head>
 <body>
     <span id="show"></span>
@@ -25,33 +25,4 @@
     <p id="demo"></p>
 </body>
 </html>
- -->
 
- <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <script>
-        function myFun(time){
-            var d = new Date();
-            document.getElementById("show").innerHTML = time + " : " + d.toLocaleTimeString();
-        }
-        // timer function 
-        setInterval(myFun,1000,"Time");
-        
-        var data='';
-        function printTime(){
-            var d = new Date();
-            data = data + d.toLocaleTimeString() + "<br>";
-            document.getElementById("display").innerHTML = data;
-        }
-    </script>
-</head>
-<body>
-    <p id="show"></p>
-    <button onclick="printTime()">Click</button>
-    <p id="display"></p>
-</body>
-</html>
