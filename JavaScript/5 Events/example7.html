@@ -5,46 +5,29 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <style>
-        div{
-            float: left;
-        }
-        #demo1,#demo2,#demo3{
-            height: 250px;
-            width: 250px;
+        #demo{
+            height:300px;
             border-style: solid;
-            border-radius: 50%;
         }
     </style>
     <script>
-        function changeColor(color,element){
-            var element = document.getElementById(element);
-            element.style.backgroundColor = color;
+        function setColor(){
+            var color = document.getElementById("color").value;
+            var demo = document.getElementById("demo");
+            demo.style.backgroundColor = color;            
         }
     </script>
 </head>
-<body id="body">
-    <div>
-        <div id="demo1"></div>
-        <br>
-        <center>
-            <button onclick="changeColor('red','demo1')">Red</button>
-        </center>
-    </div>
-    <div>
-        <div id="demo2"></div>
-        <br>
-        <center>
-            <button onclick="changeColor('green','demo2')">Green</button>
-        </center>
-    </div>
-    <div>
-        <div id="demo3"></div>
-        <br>
-        <center>
-            <button onclick="changeColor('blue','demo3')">Blue</button>
-        </center>
-    </div>
-
+<body>
+    <div id="demo"></div>
+    <select name="color" id="color" onchange="setColor()">
+        <option value="">Select Color</option>
+        <option value="red">Red</option>
+        <option value="green">Green</option>
+        <option value="blue">Blue</option>
+        <option value="pink">Pink</option>
+        <option value="purple">Purple</option>
+    </select>
 </body>
 </html>
 

@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+    </style>
+    <script>
+        function changeColor(color){
+            let para1 = document.getElementById("para1");
+            let para2 = document.getElementById("para2");
+            let para3 = document.getElementById("para3");
+            para1.style.color=color;
+            para2.style.color=color;
+            para3.style.color=color;
+        }
+    </script>
+</head>
+<body>
+    <button onclick="changeColor('red')">Red</button>
+    <button onclick="changeColor('green')">Green</button>
+    <button onclick="changeColor('blue')">Blue</button>
+
+    <p id="para1">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nobis laboriosam quam fuga ipsam? Eius aut expedita, placeat maiores aspernatur nulla.</p>
+
+    <p id="para2">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nobis laboriosam quam fuga ipsam? Eius aut expedita, placeat maiores aspernatur nulla.</p>
+
+    <p id="para3">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nobis laboriosam quam fuga ipsam? Eius aut expedita, placeat maiores aspernatur nulla.</p>
+
+</body>
+</html>
+
