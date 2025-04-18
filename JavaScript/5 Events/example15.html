@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+    </style>
+    <script>
+        function printData(){
+            var itemsArray = document.getElementsByTagName('input');
+            // console.log(itemsArray);
+            var value;
+            for(let i=0;i<itemsArray.length;i++){  
+                if(itemsArray[i].checked)
+                    value = itemsArray[i].value;
+            }
+            if(value)
+                alert("You selected "+value);
+            else
+                alert("You Haven't Selected Anything");
+        }
+    </script>
+</head>
+<body>
+    <h2>Select Items | Radio</h2>
+    <input type="radio" name="items" id="chocolate" value="Chocolate">Chocolate <br>
+    <input type="radio" name="items" id="juice" value="Juice">Juice <br>
+    <input type="radio" name="items" id="shake" value="Shake">Shake <br>
+    <input type="radio" name="items" id="mocktail" value="Mocktail">Mocktail <br>
+    <input type="radio" name="items" id="cocktail" value="Cocktail">Cocktail <br>
+    <br>
+    <button onclick="printData()">Select</button>
+</body>
+</html>
+

@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #outerdiv{
+            height: 600px;
+            width: 800px;
+            border-style: solid;
+            margin: auto;
+        }
+        #innerdiv{
+            height: 360px;
+            width: 775px;
+            border-style: solid;
+            margin: 10px;
+        }
+        #biggerImg{
+            height: 360px;
+            width: 775px;
+        }
+        #subdiv{
+            height: 175px;
+            width: 176px;
+            border-style: solid;
+            float: left;
+            margin: 10px;
+        }
+        #smallerImg{
+            height: 175px;
+            width: 176px;
+        }
+    </style>
+    <script>
+        function changeImg(smallerImageObj){
+            var biggerImageName = document.getElementById('biggerImg').src;
+            var temp = smallerImageObj.src;
+            smallerImageObj.src = biggerImageName;
+            document.getElementById('biggerImg').src = temp;
+        }
+    </script>
+</head>
+<body>
+    <div id="outerdiv">
+        <div id="innerdiv">
+            <img src="2120904-bigthumbnail.jpg" name="biggerImg" id="biggerImg" alt="">
+        </div>
+        <hr color="black">
+        <div id="subdiv">
+            <img src="R.jpg" name="smallerImg" onclick="changeImg(this)" id="smallerImg" alt="">
+        </div>
+        <div id="subdiv">
+            <img src="OIP.jpg" name="smallerImg" onclick="changeImg(this)" id="smallerImg" alt="">
+        </div>
+        <div id="subdiv">
+            <img src="OIP (2).jpg" name="smallerImg" onclick="changeImg(this)" id="smallerImg" alt="">
+        </div>
+        <div id="subdiv">
+            <img src="OIP (1).jpg" name="smallerImg" onclick="changeImg(this)" id="smallerImg" alt="">
+        </div>
+    </div>
+</body>
+</html>
+
