@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div,h1,p{
+            padding: 10px;
+        }
+        div{
+            background-color: red;
+        }
+        h1{
+            background-color: green;
+        }
+        p{
+            background-color: purple;
+        }
+    </style>
+    <script>
+        function enter(){
+            document.getElementById("enter").innerHTML++;
+        }
+        function over(){
+            document.getElementById("over").innerHTML++;
+        }
+        function move(){
+            document.getElementById("move").innerHTML++;
+        }
+    </script>
+</head>
+<body onload="alert('This is an example of onLoad Event')">
+    <div id="outerdiv" onmouseenter="enter()">
+        <center>
+            <h1>Mouse Enter : <span id="enter">0</span></h1>
+        </center>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero repellat, dolorum nisi commodi corporis dolore facilis omnis rem, porro quaerat quos vitae incidunt accusamus doloribus sit qui est rerum ab. Tenetur aspernatur porro sit corrupti dolores dicta labore placeat neque nostrum, aliquam dolorum quam libero commodi consequatur nemo eveniet assumenda!</p>
+    </div>
+    <br>
+    <div id="outerdiv" onmouseover="over()">
+        <center>
+            <h1>Mouse Over : <span id="over">0</span></h1>
+        </center>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero repellat, dolorum nisi commodi corporis dolore facilis omnis rem, porro quaerat quos vitae incidunt accusamus doloribus sit qui est rerum ab. Tenetur aspernatur porro sit corrupti dolores dicta labore placeat neque nostrum, aliquam dolorum quam libero commodi consequatur nemo eveniet assumenda!</p>
+    </div>
+    <br>
+    <div id="outerdiv" onmousemove="move()">
+        <center>
+            <h1>Mouse Move : <span id="move">0</span></h1>
+        </center>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero repellat, dolorum nisi commodi corporis dolore facilis omnis rem, porro quaerat quos vitae incidunt accusamus doloribus sit qui est rerum ab. Tenetur aspernatur porro sit corrupti dolores dicta labore placeat neque nostrum, aliquam dolorum quam libero commodi consequatur nemo eveniet assumenda!</p>
+    </div>
+
+</body>
+</html>

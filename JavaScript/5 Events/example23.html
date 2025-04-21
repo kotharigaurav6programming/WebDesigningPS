@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        function validateUsername(){
+            var username = document.getElementById("username");
+            var udisplay = document.getElementById("udisplay");
+            
+            if(username.value.trim()==''){
+                udisplay.innerHTML = 'Username Required';
+                return false;
+            }else{
+                udisplay.innerHTML = '';
+                return true;
+            }
+        }
+
+        function validateEmail(){
+            var email = document.getElementById("email");
+            var edisplay = document.getElementById("edisplay");
+            
+            if(email.value.trim()==''){
+                edisplay.innerHTML = 'Email Required';
+                return false;
+            }else{
+                edisplay.innerHTML = '';
+                return true;
+            }
+        }
+
+        function validate(){
+            var email = document.getElementById("email");
+            if(email.value.trim()==''){
+                alert('Email Required');
+                email.focus();
+                return false;
+            }
+
+            var male = document.getElementById("male");
+            var female = document.getElementById("female");
+            if(male.checked==false && female.checked==false){
+                alert('Gender Required');
+                male.focus();
+                return false;
+            }
+
+            var subject = document.getElementById("subject");
+            if(subject.selectedIndex==0){
+                alert('Subject Required');
+                subject.focus();
+                return false;
+            }
+        }
+    </script>
+</head>
+<body>
+    <form action="welcome.html" onsubmit="return validate()">
+    <table>
+        <caption>
+            <h2>Registration Form | Validation</h2>
+        </caption>
+        <tr>
+            <td>
+                <label for="username">Username</label>
+            </td>
+            <td>
+                <input onkeyup="validateUsername()" type="text" placeholder="Enter Username" id="username" name="username">
+                <span id="udisplay" style="color:red">*</span>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <label for="email">Email</label>
+            </td>
+            <td>
+                <input onkeyup="validateEmail()" type="email" placeholder="Enter Email" id="email" name="email">
+                <span id="edisplay" style="color:red">*</span>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <label for="male">Gender</label>
+            </td>
+            <td>
+                <input type="radio" id="male" name="gender" value="Male">
+                <label for="male">Male</label>
+                <input type="radio" id="female" name="gender" value="Female">
+                <label for="female">Female</label>
+                <span id="gdisplay" style="color:red">*</span>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <label for="subject">Subject</label>
+            </td>
+            <td>
+                <select name="subject" id="subject">
+                    <option value="">Select Subject</option>
+                    <option value="Mern Stack">Mern Stack</option>
+                    <option value="Java Programming">Java Programming</option>
+                    <option value="Python Programming">Python Programming</option>
+                </select>
+                <span id="sdisplay" style="color:red">*</span>
+            </td>
+        </tr>
+        <tr>
+            <td></td>
+            <td>
+                <input type="submit" value="Register">
+                <input type="reset" value="Reset">
+            </td>
+        </tr>
+    </table>
+    </form>
+</body>
+</html>

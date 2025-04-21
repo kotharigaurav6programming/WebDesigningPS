@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        function myFun(){
+            alert("Form Submitted successfully");
+        }
+        function foc(){
+            const username = document.getElementById("username");
+            username.style.backgroundColor='wheat';
+            username.style.color='orange';
+        }
+        function blr(){
+            const username = document.getElementById("username");
+            username.style.backgroundColor='orange';
+            username.style.color='wheat';
+        }
+
+</script>
+</head>
+<body>
+    <form action="" onsubmit="myFun()">
+        <input type="text" placeholder="Enter Username" name="username" id="username" onfocus="foc()" onblur="blr()">
+        <button>Submit</button>
+    </form>
+</body>
+</html>

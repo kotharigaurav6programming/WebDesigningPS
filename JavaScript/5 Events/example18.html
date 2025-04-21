@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        function move(){
+            let move = document.getElementById("move");
+            move.style.backgroundColor='crimson';
+        }
+        function enter(){
+            let enter = document.getElementById("enter");
+            enter.style.fontFamily='cursive';
+        }
+        function over(){
+            let over = document.getElementById("over");
+            over.style.fontSize='30px';
+        }
+        function up(){
+            let up = document.getElementById("up");
+            up.style.backgroundColor='black';
+            up.style.color='white';
+        }
+        function down(){
+            let down = document.getElementById("down");
+            down.style.textTransform='uppercase';
+        }
+        function leave(){
+            let leave = document.getElementById("leave");
+            leave.style.textDecoration='underline';
+        }
+    </script>
+</head>
+<body>
+    <span onmousemove="move()" id="move">Lorem ipsum dolor sit amet consectetur adipisicing elit.</span><br>
+    <span onmouseenter="enter()" id="enter">Lorem ipsum dolor sit amet consectetur adipisicing elit.</span><br>
+    <span onmouseover="over()" id="over">Lorem ipsum dolor sit amet consectetur adipisicing elit.</span><br>
+    <span onmouseup="up()" id="up">Lorem ipsum dolor sit amet consectetur adipisicing elit.</span><br>
+    <span onmousedown="down()" id="down">Lorem ipsum dolor sit amet consectetur adipisicing elit.</span><br>
+    <span onmouseleave="leave()" id="leave">Lorem ipsum dolor sit amet consectetur adipisicing elit.</span><br>
+</body>
+</html>
