@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        function validate(){
+            var text = document.getElementById("text");
+            var display = document.getElementById("display");
+            
+            if(text.value.trim()==''){
+                display.innerHTML = 'Field Required';
+                return false;
+            }else{
+                //var reg = /\d/;
+                //var reg = /\d{2}/;
+                // var reg = /^\d/;
+                // var reg = /^\d$/;
+                //var reg = /^\d+$/;
+                // var reg = /\D/;
+                // var reg = /^[0-9]+$/;
+                // var reg = /^[A-Z]+$/;
+                // var reg = /^[a-z]+$/;
+                // var reg = /^[!@#$%^&*()_+]+$/;
+                // var reg = /^[0-9A-Za-z_]+$/;
+                // var reg = /^\w+$/;
+                var reg = /^[6789][0-9]{9}$/;
+                
+                if(reg.test(text.value)){
+                    display.innerHTML="valid";
+                    display.style.color='green';
+                    return true;
+                }else{
+                    display.innerHTML="invalid";
+                    display.style.color='red';
+                    return false;
+                }    
+            }
+        }
+    </script>
+</head>
+<body>
+    <h2>Regular Expression</h2>
+    <input onkeyup="validate()" type="text" placeholder="Enter Text" id="text" name="text">
+    <span id="display" style="color:red">*</span>
+    <br><button onclick="validate()">Check</button>
+</body>
+</html>

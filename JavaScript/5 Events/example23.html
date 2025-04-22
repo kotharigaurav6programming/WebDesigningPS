@@ -31,37 +31,75 @@
             }
         }
 
-        function validate(){
-            var email = document.getElementById("email");
-            if(email.value.trim()==''){
-                alert('Email Required');
-                email.focus();
-                return false;
-            }
-
+        function validateGender(){
             var male = document.getElementById("male");
             var female = document.getElementById("female");
-            if(male.checked==false && female.checked==false){
-                alert('Gender Required');
-                male.focus();
-                return false;
-            }
+            var gdisplay = document.getElementById("gdisplay");
 
+            if(male.checked==false && female.checked==false){
+                gdisplay.innerHTML = "Gender Required";
+                return false;
+            }else{
+                gdisplay.innerHTML='';
+                return true;
+            }
+        }
+
+        function validateSubject(){
             var subject = document.getElementById("subject");
+            var sdisplay = document.getElementById("sdisplay");
+            
             if(subject.selectedIndex==0){
-                alert('Subject Required');
-                subject.focus();
+                sdisplay.innerHTML="Subject required";
+                return false;
+            }else{
+                sdisplay.innerHTML='';
+                return true;
+            }
+        }
+
+        function validate(){
+            var usernameStatus = validateUsername();
+            var emailStatus = validateEmail();
+            var genderStatus = validateGender();
+            var subjectStatus = validateSubject();
+            
+            var edisplay = document.getElementById("edisplay");
+            var gdisplay = document.getElementById("gdisplay");
+            var sdisplay = document.getElementById("sdisplay");
+
+            if(usernameStatus==false){
+                if(emailStatus==false)
+                    edisplay.innerHTML = '*';
+                if(genderStatus==false)
+                    gdisplay.innerHTML = '*';
+                if(subjectStatus==false)
+                    sdisplay.innerHTML = '*';
                 return false;
             }
+            else if(emailStatus==false)
+            {    
+                if(genderStatus==false)
+                    gdisplay.innerHTML = '*';
+                if(subjectStatus==false)
+                    sdisplay.innerHTML = '*';
+                return false;
+            } 
+            else if(genderStatus==false)
+            {
+                if(subjectStatus==false)
+                    sdisplay.innerHTML = '*';
+                return false;
+            }
+            else if(subjectStatus==false)
+                return false;
         }
     </script>
 </head>
 <body>
     <form action="welcome.html" onsubmit="return validate()">
-    <table>
-        <caption>
-            <h2>Registration Form | Validation</h2>
-        </caption>
+        <h2>Registration Form </h2>
+        <table>
         <tr>
             <td>
                 <label for="username">Username</label>
@@ -85,7 +123,7 @@
                 <label for="male">Gender</label>
             </td>
             <td>
-                <input type="radio" id="male" name="gender" value="Male">
+                <input onclick="validateGender()" type="radio" id="male" name="gender" value="Male">
                 <label for="male">Male</label>
                 <input type="radio" id="female" name="gender" value="Female">
                 <label for="female">Female</label>
@@ -97,7 +135,7 @@
                 <label for="subject">Subject</label>
             </td>
             <td>
-                <select name="subject" id="subject">
+                <select onchange="validateSubject()" name="subject" id="subject">
                     <option value="">Select Subject</option>
                     <option value="Mern Stack">Mern Stack</option>
                     <option value="Java Programming">Java Programming</option>
