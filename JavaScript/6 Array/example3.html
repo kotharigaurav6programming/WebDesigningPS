@@ -1,0 +1,30 @@
+<script>
+    var arr = [561,62,13,4,45];
+    document.write("Array elements are : "+arr);
+    
+    arr.push(100,200,300);
+    document.write("<br>Array elements are : "+arr);
+    
+    arr.pop();
+    document.write("<br>Array elements are : "+arr);
+
+    arr.unshift(100,200,300);
+    document.write("<br>Array elements are : "+arr);
+    
+    arr.shift();
+    document.write("<br>Array elements are : "+arr);
+
+    arr.push(100,200,300);
+    document.write("<br>Array elements are : "+arr);
+    
+    document.write("<br>Maximum element : "+Math.max(...arr));
+    document.write("<br>Minimum element : "+Math.min(...arr));
+
+    document.write("<br>Result : "+arr.includes(38));
+    document.write("<br>sort : "+arr.sort((a,b)=>{
+        return a-b;
+    }));
+
+    document.write("<br>Result : "+arr.join('-'));
+    
+</script>

@@ -1,0 +1,49 @@
+<script>
+    var arr = [1,2,3,4,5];
+    document.write("Array elements are : "+arr);
+    
+    document.write("<br>");
+    arr.map(function(element){
+        document.write(element+" ");
+    });
+    
+    const res1 = arr.map(function(element){
+        return (element>3 ? element : '');
+    });
+    document.write("<br>Array elements are : "+res1);
+
+    const res2 = arr.find(function(element){
+        return (element>3 ? element : '');
+    });
+    document.write("<br>Array elements are : "+res2);
+
+    const res3 = arr.filter(function(element){
+        return (element>3 ? element : '');
+    });
+    document.write("<br>Array elements are : "+res3);
+
+    const res4 = arr.forEach(function(element){
+        return (element>3 ? element : '');
+    });
+    document.write("<br>Array elements are : "+res4);
+
+    const res5 = arr.every(function(element,index){
+        document.write("<br>index : "+index);
+        return (element>0 ? element : '');
+    });
+    document.write("<br>Array elements are : "+res5);
+
+    const res6 = arr.some(function(element,index){
+        document.write("<br>index : "+index);
+        return (element>3 ? element : '');
+    });
+    document.write("<br>Array elements are : "+res6);
+
+    const res7 = arr.reduce(function(element,number){
+        document.write("<br>element : "+element+" number : "+number);
+        return element+number;
+    });
+    document.write("<br>Array elements are : "+res7);
+
+
+</script>
