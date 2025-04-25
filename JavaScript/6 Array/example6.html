@@ -1,0 +1,27 @@
+<!-- Program to reverse array elements -->
+<script>
+    var arr = [1,2,3,4,5];
+    document.write("Array elements are : "+arr);
+    var size = arr.length;
+    for(var i=0;i<size/2;i++){
+        var temp = arr[i];
+        arr[i] = arr[size-1-i];
+        arr[size-1-i] = temp;
+    }
+    document.write("<br>Reverse array elements : "+arr);
+</script>
+
+<!-- 
+array is palindrome or not : 
+
+array : 1 2 3 4 5
+reverse : 5 4 3 2 1 
+    
+    1 2 3 4 5 ---------------- 5 4 3 2 1
+        |__________________________|
+             not palindrome 
+
+    1 2 3 2  1 ---------------- 1 2 3 2 1
+        |__________________________|
+                palindrome 
+-->
