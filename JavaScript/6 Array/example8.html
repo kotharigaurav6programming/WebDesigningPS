@@ -1,0 +1,22 @@
+<!-- Program showing the concept of 2d array -->
+<script>
+    var arr = [];
+    var r = parseInt(prompt("Enter rows : "));
+    var c = parseInt(prompt("Enter columns : "));
+    
+    alert("Enter Array elements");
+    for(let i=0;i<r;i++){
+        arr[i] = [];
+        for(let j=0;j<c;j++){
+            arr[i][j] = parseInt(prompt("Enter elements : "));
+        }
+    }    
+
+    document.write("Array elements are : <br>");
+    for(let i=0;i<arr.length;i++){
+        for(let j=0;j<arr[i].length;j++){
+            document.write(arr[i][j]+" ");
+        }
+        document.write("<br>");
+    }   
+</script>
