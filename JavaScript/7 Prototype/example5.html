@@ -1,0 +1,19 @@
+<script>
+
+    function Employee(){
+        this.setData = function(name,age,address){
+            this.name = name;
+            this.age = age;
+            this.address = address;
+        }
+        this.getData = function(){
+            document.write("<br>Name : ",this.name);
+            document.write("<br>Age : ",this.age);
+            document.write("<br>Address : ",this.address);
+        }
+    }
+    const emp = new Employee();
+    emp.setData('Andrew Anderson',32,"Indore");
+    emp.getData();
+
+</script>

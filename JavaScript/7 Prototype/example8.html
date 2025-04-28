@@ -1,0 +1,20 @@
+<script>
+
+    function Employee(){
+        this.name = 'Andrew Anderson';
+        this.age = 45,
+        this.address = 'Indore'
+
+        document.write("<br>Name : ",this.name);
+        document.write("<br>Age : ",this.age);
+        document.write("<br>Address : ",this.address);
+        document.write("<br>Country : ",this.country);
+    }
+    Employee.prototype.country = "India";
+    Employee.prototype.showMessage = function(){
+        document.write("<br>Welcome Message");
+    }
+    const emp = new Employee();
+    emp.showMessage();
+
+</script>
