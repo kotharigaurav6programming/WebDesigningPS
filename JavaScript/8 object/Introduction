@@ -1,0 +1,43 @@
+Object in javascript
+---------------------
+1. object is represented by {} <-------- curly brackets | figure brackets 
+2. There are two ways to define object :
+    i. by object literal 
+    ii. by Object Constructor (using new keyword) 
+
+i. by object literal 
+
+   var obj = {
+        key : value,
+        key : value,
+        ...
+   } 
+
+   var obj = {
+    fname : "andrew",
+    lname : "anderson"
+   }
+
+   obj.address = 'Indore'
+   obj.age = 45
+
+   delete obj.address; 
+---------------------------------- 
+
+var obj = {
+    "first name": "andrew anderson" 
+}
+obj.first name      incorrect
+obj["first name"]   correct
+
+-----------------------------------
+
+var obj = {
+    for : 'andrew',
+    let : 45,
+    return : 'Indore'
+}
+-----------------------------------
+
+object---> key -- type --> string
+           value -- type --> depends on the type of data

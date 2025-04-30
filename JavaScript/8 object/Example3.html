@@ -1,0 +1,20 @@
+<script>
+    var obj = {
+        fname : "Andrew Anderson",
+        age : 45,
+        status : true,
+        toString(){
+            return this.fname +" "+ this.age +" "+ this.status +" "+ this.address +" "+ this.pincode;
+        }
+    }
+    obj.address = "Indore";
+    obj.pincode = 452010;
+
+    document.write("object : "+obj);
+    document.write("<br>object : "+obj.toString());
+    document.write("<br>First Name : "+obj.fname);
+    document.write("<br>Age : "+obj.age);
+    document.write("<br>Status : "+obj.status);
+    document.write("<br>Address : "+obj.address);
+    document.write("<br>Pincode : "+obj.pincode);
+</script>
