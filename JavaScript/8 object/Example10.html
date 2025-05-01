@@ -1,0 +1,18 @@
+<p id="show"></p>
+<script>
+    var obj1 = {name:"Andrew Anderson", age:56, address:"Indore"};
+    var obj2 = {name:"Peter Parker", age:32, address:"Bhopal"};
+    var obj3 = {name:"Simon Sim", age:78, address:"Nagda"};
+    
+    var arr = [obj1,obj2,obj3];
+    var table=`<table border='1' cellspacing='0' cellpadding='10'><tr><th>S.No</th><th>Name</th><th>Age</th><th>Address</th></tr>`;
+    for(var index in arr){
+        table+=`<tr><td>${parseInt(index)+1}</td>`;
+        for(var key in arr[index]){
+            table+=`<td>${arr[index][key]}</td>`;
+        }
+        table+=`</tr>`;
+    }
+    table+='</table>';
+    document.getElementById("show").innerHTML = table;
+</script>
