@@ -1,0 +1,47 @@
+<button onclick="showData()">Click Me</button>
+<p id="show"></p>
+<script>
+    function showData() {
+        var arr = [
+            { 
+                name: "Andrew Anderson", 
+                age: 56, 
+                address: {
+                    city:"Indore",
+                    state : "Madhya Pradesh"
+                } 
+            },
+            { 
+                name: "Peter Parker", 
+                age: 32, 
+                address: {
+                    city:"Bhopal",
+                    state : "Madhya Pradesh"
+                }  
+            },
+            { 
+                name: "Simon Sim", 
+                age: 78, 
+                address: {
+                    city:"Nagda",
+                    state : "Madhya Pradesh"
+                }  
+            }
+        ];
+        var table = `<table border='1' cellspacing='0' cellpadding='10'><tr><th>S.No</th><th>Name</th><th>Age</th><th>City</th><th>State</th></tr>`;
+        for (var index in arr) {
+            table += `<tr><td>${parseInt(index) + 1}</td>`;
+            for (var key in arr[index]) {
+                if(typeof arr[index][key]=="object"){
+                    for(var subkey in arr[index][key]){
+                        table+=`<td>${arr[index][key][subkey]}</td>`;
+                    }
+                }else   
+                    table+=`<td>${arr[index][key]}</td>`;
+            }
+            table += `</tr>`;
+        }
+        table += '</table>';
+        document.getElementById("show").innerHTML = table;
+    }
+</script>

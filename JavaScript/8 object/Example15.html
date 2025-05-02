@@ -1,0 +1,127 @@
+<button onclick="showData()">Click Me</button>
+<p id="show"></p>
+<script>
+    function showData() {
+        var arr = [
+            {
+                id: 10,
+                name: "Clementina DuBuque",
+                username: "Moriah.Stanton",
+                email: "Rey.Padberg@karina.biz",
+                address: {
+                    street: "Kattie Turnpike",
+                    suite: "Suite 198",
+                    city: "Lebsackbury",
+                    zipcode: "31428-2261",
+                    geo: {
+                        lat: "-38.2386",
+                        lng: "57.2232"
+                    }
+                },
+                phone: "024-648-3804",
+                website: "ambrose.net",
+                company: {
+                    name: "Hoeger LLC",
+                    catchPhrase: "Centralized empowering task-force",
+                    bs: "target end-to-end models"
+                }
+            },
+            {
+                id: 10,
+                name: "Clementina DuBuque",
+                username: "Moriah.Stanton",
+                email: "Rey.Padberg@karina.biz",
+                address: {
+                    street: "Kattie Turnpike",
+                    suite: "Suite 198",
+                    city: "Lebsackbury",
+                    zipcode: "31428-2261",
+                    geo: {
+                        lat: "-38.2386",
+                        lng: "57.2232"
+                    }
+                },
+                phone: "024-648-3804",
+                website: "ambrose.net",
+                company: {
+                    name: "Hoeger LLC",
+                    catchPhrase: "Centralized empowering task-force",
+                    bs: "target end-to-end models"
+                }
+            },
+            {
+                id: 10,
+                name: "Clementina DuBuque",
+                username: "Moriah.Stanton",
+                email: "Rey.Padberg@karina.biz",
+                address: {
+                    street: "Kattie Turnpike",
+                    suite: "Suite 198",
+                    city: "Lebsackbury",
+                    zipcode: "31428-2261",
+                    geo: {
+                        lat: "-38.2386",
+                        lng: "57.2232"
+                    }
+                },
+                phone: "024-648-3804",
+                website: "ambrose.net",
+                company: {
+                    name: "Hoeger LLC",
+                    catchPhrase: "Centralized empowering task-force",
+                    bs: "target end-to-end models"
+                }
+            },
+            {
+                id: 10,
+                name: "Clementina DuBuque",
+                username: "Moriah.Stanton",
+                email: "Rey.Padberg@karina.biz",
+                address: {
+                    street: "Kattie Turnpike",
+                    suite: "Suite 198",
+                    city: "Lebsackbury",
+                    zipcode: "31428-2261",
+                    geo: {
+                        lat: "-38.2386",
+                        lng: "57.2232"
+                    }
+                },
+                phone: "024-648-3804",
+                website: "ambrose.net",
+                company: {
+                    name: "Hoeger LLC",
+                    catchPhrase: "Centralized empowering task-force",
+                    bs: "target end-to-end models"
+                }
+            }
+        ];
+        var table = `<table border='1' cellspacing='0' cellpadding='10'><tr><th>S.No</th><th>Id</th><th>Name</th><th>Username</th><th>Email</th><th>Street</th><th>Suit</th><th>City</th><th>Zipcode</th><th>lat</th><th>Lon</th><th>Phone</th><th>Website</th><th>Name</th><th>CatchPhrase</th><th>bs</th></tr>`;
+        for (var index in arr) {
+            table += `<tr><td>${parseInt(index) + 1}</td>`;
+            for (var key in arr[index]) {
+                if (typeof arr[index][key] == "object") {
+                    for (var subkey in arr[index][key]) {
+                        if (typeof arr[index][key][subkey] == "object") {
+                            for (var innerkey in arr[index][key][subkey]) {
+                                if (typeof arr[index][key][subkey][innerkey] == "object") {
+                                    for (var innersubkey in arr[index][key][subkey][innerkey]) {
+                                        table += `<td>${arr[index][key][subkey][innerkey][innersubkey]}</td>`;
+                                    }
+                                } else {
+                                    table += `<td>${arr[index][key][subkey][innerkey]}</td>`;
+                                }
+                            }
+                        } else {
+                            table += `<td>${arr[index][key][subkey]}</td>`;
+                        }
+                    }
+                } else
+                    table += `<td>${arr[index][key]}</td>`;
+            }
+            table += `</tr>`;
+        }
+        table += '</table>';
+        document.getElementById("show").innerHTML = table;
+    }
+</script>
