@@ -1,0 +1,31 @@
+<script>
+    // javascript object 
+    var jsObj = {
+        name:"Andrew Anderson",
+        age:56
+    }
+    document.write("<br>typeof jsObj : "+typeof jsObj);
+    document.write("<br>name : "+jsObj.name);
+    document.write("<br>age : "+jsObj.age);
+
+    // json object 
+    var jsonObj = {
+        "name":"Andrew Anderson",
+        "age":56
+    }
+    document.write("<br><br>typeof jsonObj : "+typeof jsonObj);
+    document.write("<br>name : "+jsonObj.name);
+    document.write("<br>age : "+jsonObj.age);
+
+    // json string 
+    var jsonString = `{
+        "name":"Andrew Anderson",
+        "age":56
+    }`
+    document.write("<br><br>typeof jsonString : "+typeof jsonString);
+    var jsObject = JSON.parse(jsonString);
+    document.write("<br>name : "+jsObject.name);
+    document.write("<br>age : "+jsObject.age);
+
+
+</script>
