@@ -1,0 +1,29 @@
+<button onclick="showFun()">Click Me</button>
+<p id="show"></p>
+
+<script>
+    function showFun(){
+        var obj  =  {
+            userId : 10101,
+            id : 1000,
+            title : 'Dummy Title',
+            body : 'This is an example'
+        }
+        var xhttp = new XMLHttpRequest();
+        var URL = 'https://jsonplaceholder.typicode.com/posts';
+        var METHOD = 'POST';
+        var ASYNC_STATUS = true; 
+        xhttp.open(METHOD,URL,ASYNC_STATUS);
+        xhttp.setRequestHeader('content-type','application/json');
+        xhttp.send(JSON.stringify(obj));
+
+        xhttp.onreadystatechange = function(){
+            if(xhttp.readyState==4 && xhttp.status==201){
+                // console.log(xhttp.responseText);
+                var res = JSON.parse(xhttp.responseText);
+            }
+            var result = "UserId : "+res.userId+"<br>Id : "+res.id+"<br>Title : "+res.title+"<br>Body : "+res.body;
+            document.getElementById("show").innerHTML=result;
+        }
+    }
+</script>
