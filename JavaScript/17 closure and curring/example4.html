@@ -1,0 +1,11 @@
+<!-- Example showing the concept of currying -->
+<script>
+    function myFun(protocol){
+        return (domain)=>{
+            return (endPoint)=>{
+                document.write(`${protocol}${domain}${endPoint}`);
+            }
+        }
+    }
+    myFun("http://")("www.google.com")("/about_us");
+</script>

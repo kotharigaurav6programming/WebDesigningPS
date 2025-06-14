@@ -1,0 +1,20 @@
+<!-- example showing the concept of callback hell -->
+<script>
+    var num = 10;
+    function myFunction(num,callback){
+        document.write("<br>num : "+num);
+        callback(num+2,(num,callback)=>{
+            document.write("<br>num : "+num);
+            callback(num+2,()=>{
+                document.write("<br>End of program");
+            });
+        });
+    }
+    myFunction(num,(num,callback)=>{
+        document.write("<br>num : "+num);
+        callback(num+2,(num,callback)=>{
+            document.write("<br>num : "+num);
+            callback();
+        });
+    });
+</script>

@@ -1,0 +1,20 @@
+<!-- example showing the concept of class and object -->
+
+<script>
+    /*
+    class Demo{
+        name = "Andrew Anderson"
+    }
+    const obj = new Demo();
+    document.write("name : "+obj.name);
+    */
+
+    class Demo{
+        static name = "Andrew Anderson"
+        static display(){
+            document.write("<br>Name : "+Demo.name);
+        }
+    }
+    document.write("name : "+Demo.name);
+    Demo.display();
+</script>

@@ -1,0 +1,23 @@
+<!-- example showing the concept of class and object -->
+
+<script>
+    var a = parseInt(prompt("Enter value of a "));
+    var b = parseInt(prompt("Enter value of b "));
+    
+    class Demo{
+        setData(a,b){
+         this.a = a;
+         this.b = b;   
+        }
+        swap(){
+            var temp = this.a;
+            this.a = this.b;
+            this.b = temp;
+        }
+    }
+    const obj = new Demo();
+    obj.setData(a,b);
+    document.write("<br>Before Swapping : <br>a : "+obj.a+"<br>b : "+obj.b+"<br>");
+    obj.swap();
+    document.write("<br>After Swapping : <br>a : "+obj.a+"<br>b : "+obj.b+"<br>");
+</script>

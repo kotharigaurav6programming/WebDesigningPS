@@ -1,0 +1,14 @@
+<script>
+    const promiseObj = new Promise((resolve,reject)=>{
+        resolve("This is an example of promise");
+        //reject("This is an example of reject");
+    });
+    
+    promiseObj.then(function(msg){
+        document.write("resolve : "+msg);
+    },function(msg){
+        document.write("reject : "+msg);
+    }).finally(()=>{
+        document.write("<br>Executes successfully");
+    });
+</script>

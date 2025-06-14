@@ -1,0 +1,22 @@
+<!-- Asynchronous Callback -->
+<script>
+    console.log("<br>Before execution");
+    function myFun(callback1,callback2){
+        console.log("<br>------statement 1");
+        setTimeout(()=>{
+            callback1();
+        },3000);
+        console.log("<br>------statement 2");
+        setTimeout(callback2,5000);
+    }
+
+    var fun1 = ()=>{
+        console.log("<br>statement 1");
+    }
+    var fun2 = ()=>{
+        console.log("<br>statement 2");
+    }
+
+    myFun(fun1,fun2);
+    console.log("<br>After execution");
+</script>

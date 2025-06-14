@@ -1,0 +1,10 @@
+<script>
+    function myFun(year){
+        document.write(`Hello ${this.name}, you are ${new Date().getFullYear()-year} years old`);
+    }
+    const user = {
+        name : "Andrew Anderson"
+    }
+    myFun.call(user,2000);
+    
+</script>

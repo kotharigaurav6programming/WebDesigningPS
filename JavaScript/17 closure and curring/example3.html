@@ -1,0 +1,11 @@
+<!-- Example showing the concept of currying -->
+<script>
+    function myFun(name){
+        return (year)=>{
+            return (hobbies)=>{
+                document.write(`Hello ${name}, you are ${new Date().getFullYear()-year} years old and you like ${hobbies[0]} and ${hobbies[1]}`);
+            }
+        }
+    }
+    myFun("Andrew Anderson")(2001)(['cricket','football']);
+</script>

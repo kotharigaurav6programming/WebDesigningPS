@@ -1,0 +1,19 @@
+<!-- Asynchronous -->
+<script>
+    console.log("Before execution");
+    function gotoroom(){
+        console.log("gotoroom");
+    }
+    function removegarbage(){
+        console.log("remove garbage");
+    }
+    function wonprize(){
+        console.log("wonprize");
+    }
+    gotoroom();
+    // setTimeout(removegarbage,10000);
+    setTimeout(removegarbage); // zero time delay
+    // setTimeout(removegarbage,0); // zero time delay
+    wonprize();
+    console.log("After execution");
+</script>

@@ -1,0 +1,55 @@
+<!-- Examples of Currying -->
+<script>
+    // example without currying
+    /*
+    function addition(a,b,c){
+        return a+b+c;
+    }
+    document.write("Addition : "+addition(34,44,43));
+    */
+
+    // concept of closure
+    /*
+    function addition(num1){
+        return (num2)=>{
+            return function(num3){
+                return num1+num2+num3;
+            }
+        }
+    }
+    var add = addition(100);
+    var sum = add(200); 
+    document.write("Addition : "+sum(300));
+    */
+
+    // concept of currying
+    /*
+    function addition(num1){
+        return (num2)=>{
+            return function(num3){
+                return num1+num2+num3;
+            }
+        }
+    }
+    document.write("Addition : "+addition(101)(201)(301));
+    */
+
+   // example showing the concept of currying 
+   function addition(num1){
+        if(num1>50)
+            return "No data"
+        else{
+            return (num2)=>{
+                return function(num3){
+                    return num1+num2+num3;
+                }
+            }
+        }
+    }
+    try{
+        document.write("Addition : "+addition(101)(201)(301));
+    }catch(error){
+        document.write("Condition not satisfied");
+    }
+    
+</script>

@@ -1,0 +1,31 @@
+<!-- example showing the concept of class and object -->
+
+<script>
+    var a = parseInt(prompt("Enter value of a "));
+    var b = parseInt(prompt("Enter value of b "));
+    
+    class Demo{
+        add(a,b){
+            document.write("Sum : "+(a+b));
+        }     
+        sub(a,b){
+            document.write("<br>Sub : "+(a-b));
+        }     
+        mul(a,b){
+            document.write("<br>Mul : "+(a*b));
+        }     
+        div(a,b){
+            document.write("<br>div : "+(a/b));
+        }     
+        mod(a,b){
+            document.write("<br>Mod : "+(a%b));
+        }     
+    }
+    const obj = new Demo();
+    obj.add(a,b);
+    obj.sub(a,b);
+    obj.mul(a,b);
+    obj.div(a,b);
+    obj.mod(a,b);
+    
+</script>

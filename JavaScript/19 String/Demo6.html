@@ -1,0 +1,17 @@
+<script>
+    var x = "Hello User";
+    document.write("Uppercase : "+x.toUpperCase());
+    document.write("<br>Lowercase : "+x.toLowerCase());
+
+    // var y = "Hello \"user\" how are you ? ";
+    var y = 'Hello "user" how are you ? ';
+    document.write("<br>y : "+y);
+
+    var color = ["Red","Green","Blue","Purple","Blue","pink","yellow"];
+    var res = color.filter((col)=>{
+        if(col!="Blue")
+            return col;
+    });
+    document.write("<br>Result : "+res);
+
+</script>

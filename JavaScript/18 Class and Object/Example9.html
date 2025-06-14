@@ -1,0 +1,17 @@
+<!-- example showing the concept of class and object -->
+
+<script>
+    class Demo{
+        constructor(){
+            this.a = 100;
+            this.b = 200;
+            document.write("This is an example of constructor");
+        }
+        display(){
+            document.write("<br>a : "+this.a);
+            document.write("<br>b : "+this.b);
+        }
+    }
+    const obj = new Demo();
+    obj.display();
+</script>

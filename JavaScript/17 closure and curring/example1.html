@@ -1,0 +1,57 @@
+<!-- Examples of closure -->
+<script>
+/*
+    function outerFunction(){
+        function innerFunction(){
+            document.write("Its an example");
+        }
+        innerFunction();
+    }
+    outerFunction();
+*/
+/*
+    function outerFunction(){
+        function innerFunction(){
+            document.write("Its an example");
+        }
+        return innerFunction;
+    }
+    var myFun = outerFunction();
+    myFun();
+*/ 
+
+/*
+    function outerFunction(){
+        var name = "Andrew Anderson";
+        function innerFunction(){
+            document.write("Name : "+name);
+        }
+        return innerFunction;
+    }
+    var myFun = outerFunction();
+    myFun();
+*/
+/*
+  function outerFunction(name){
+        function innerFunction(){
+            document.write("Name : "+name);
+        }
+        return innerFunction;
+    }
+    var name = "Andrew Anderson";   
+    var myFun = outerFunction(name);
+    myFun();
+*/
+
+    function outerFunction(num1){
+        function innerFunction(num2){
+            document.write("Product : "+(num1 * num2));
+        }
+        return innerFunction;
+    }
+    var num1 = 100;
+    var num2 = 456;   
+    var myFun = outerFunction(num1);
+    myFun(num2);
+
+</script>

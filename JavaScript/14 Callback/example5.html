@@ -1,0 +1,10 @@
+<script>
+    function display(callback){
+        var msg = "This is an example of callback";
+        callback(msg);
+    }
+    var myFunction = (message)=>{
+        document.write(message);
+    }
+    display(myFunction);
+</script>

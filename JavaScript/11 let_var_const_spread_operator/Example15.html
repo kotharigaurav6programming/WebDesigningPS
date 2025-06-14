@@ -1,0 +1,21 @@
+<script>
+    // concept is of object destructuring
+    function myFun(){
+        return {
+            name : "Andrew Anderson",
+            age : 56,
+            address : {
+                city:"Indore",
+                state: "Madhya Pradesh",
+                toString(){
+                   return this.city+" "+this.state;
+                }
+            }
+        }
+    }
+    const {name:FullName,age,address,salary=1234} = myFun();
+    document.write("<br>Name : "+FullName);
+    document.write("<br>Age : "+age);
+    document.write("<br>Address : "+address);    
+    document.write("<br>Salary : "+salary);    
+</script>

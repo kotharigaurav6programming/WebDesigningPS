@@ -1,0 +1,16 @@
+<script>
+    var a = parseInt(prompt("Enter first number : "));
+    var b = parseInt(prompt("Enter second number : "));
+    
+    function display(a,b,callback){
+        var sum = a + b;
+        // callback(sum);
+        setTimeout(()=>{
+            callback(sum);
+        },3000);
+    }
+    var myFunction = (sum)=>{
+        document.write("Result : "+sum);
+    }
+    display(a,b,myFunction);
+</script>

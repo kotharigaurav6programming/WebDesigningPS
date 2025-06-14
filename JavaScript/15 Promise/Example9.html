@@ -1,0 +1,41 @@
+<script>
+    var a = parseInt(prompt("Enter first number"));
+    var b = parseInt(prompt("Enter second number"));
+
+    function addition(a,b){
+        return new Promise((resolve,reject)=>{
+            document.write("<br>Addition : "+(a+b));
+            resolve(false);
+        });
+    }
+    function subtraction(a,b){
+        return new Promise((resolve,reject)=>{
+            document.write("<br>Subtraction : "+(a-b));
+            resolve(true);
+        });
+    }
+    function multiplication(a,b){
+        return new Promise((resolve,reject)=>{
+            document.write("<br>Multiplication : "+(a*b));
+            resolve();
+        });
+    }
+
+    addition(a,b).then((value)=>{
+        if(!value){
+            subtraction(a,b).then((value)=>{
+                if(value){
+                    multiplication(a,b).then(()=>{
+                        document.write("<br>End of program");
+                    }).catch((error)=>{
+                        document.write("Result : "+error);
+                    });
+                }
+            }).catch((error)=>{
+                document.write("Result : "+error);
+            });
+        }
+    }).catch((error)=>{
+        document.write("Result : "+error);
+    });
+</script>

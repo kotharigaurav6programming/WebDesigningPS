@@ -1,0 +1,12 @@
+<script>
+    var res = Promise.resolve(100);
+    res.then((number)=>{
+        document.write(number);
+    });
+
+    var res1 = Promise.reject(100);
+    res1.catch((number)=>{
+        document.write("<br>"+number);
+    });
+
+</script>

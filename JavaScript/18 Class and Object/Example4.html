@@ -1,0 +1,19 @@
+<!-- example showing the concept of class and object -->
+
+<script>
+    var a = parseInt(prompt("Enter value of a "));
+    var b = parseInt(prompt("Enter value of b "));
+    
+    class Demo1{
+        setData(a,b){
+            this.a = a;
+            this.b = b;    
+        }
+        printData(){
+            document.write("display method called<br>a : "+this.a+"<br>b : "+this.b);
+        }
+    }
+    const obj = new Demo1();
+    obj.setData(a,b);
+    obj.printData(); 
+</script>

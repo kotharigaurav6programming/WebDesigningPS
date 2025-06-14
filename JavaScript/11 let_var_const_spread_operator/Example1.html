@@ -1,0 +1,12 @@
+<script>
+    // let is a block scopic
+    let a = 100;
+    document.write("a : "+a);
+    a = 200;
+    document.write("<br>outside block a : "+a);
+    {
+        let a = 300;
+        document.write("<br>inside block a : "+a);      
+    }   
+    document.write("<br>outside block a : "+a);
+</script>

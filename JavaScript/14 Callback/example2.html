@@ -1,0 +1,11 @@
+<!-- Callback -->
+<script>
+    function myFun(callback){
+        console.log("gets entry");
+        callback();
+    }
+    const display = function(){
+        console.log("This is my example");
+    };
+    myFun(display);
+</script>

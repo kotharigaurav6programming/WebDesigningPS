@@ -1,0 +1,26 @@
+<script>
+    var num = 10;
+    function printData(num){
+        return new Promise((resolve,reject)=>{
+            document.write("<br>num : "+num);
+            resolve(num+2);
+        });
+    }
+    printData(num).then((num)=>{
+        printData(num).then((num)=>{
+            printData(num).then((num)=>{
+                printData(num).then((num)=>{
+                    document.write("<br>End of program");
+                }).catch((error)=>{
+                    document.write(error);
+                }); 
+            }).catch((error)=>{
+                document.write(error);
+            }); 
+        }).catch((error)=>{
+            document.write(error);
+        });
+    }).catch((error)=>{
+        document.write(error);
+    });
+</script>

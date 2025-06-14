@@ -1,0 +1,24 @@
+<!-- example showing the concept of class and object -->
+
+<script>
+class Parent{
+    show(){
+        document.write("<br>show method of parent called");
+    }
+    display(){
+        document.write("<br>display method of parent called");
+    }
+}
+class Child extends Parent{
+    show(){
+        document.write("<br>show method of child called");
+    }
+    printData(){
+        document.write("<br>printData method of child called");
+    }
+}
+const obj = new Child();
+obj.printData();
+obj.display();
+obj.show();
+</script>

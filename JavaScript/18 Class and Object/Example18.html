@@ -1,0 +1,21 @@
+<!-- example showing the concept of class and object -->
+
+<script>
+class Parent{
+    constructor(parentName){
+        this.parentName = parentName;
+    }
+}
+class Child extends Parent{
+    constructor(childName,parentName){
+        super(parentName);
+        this.childName = childName;
+    }
+    show(){
+        document.write("Parent Name : "+this.parentName);
+        document.write("<br>Child Name : "+this.childName);
+    }
+}
+const obj = new Child("Andrew","Peter");
+obj.show();
+</script>

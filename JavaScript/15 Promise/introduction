@@ -1,0 +1,40 @@
+Promise
+-------
+
+const res = new Promise((resolve,reject)=>{
+    resolve(value);
+    // reject(reason | error object);
+});
+
+res.then(function(){
+
+},function(){
+
+});
+
+------------------------------
+
+res.then(function(){
+
+}).catch(function(){
+
+});
+
+----------------------------
+res.then(function(){
+
+}).catch(function(){
+    
+}).finally(function(){
+    
+});
+
+-----------------------------
+res.then(function(){
+    return statement;
+}).catch(function(){
+    return statement;
+});
+
+then returns promise object with resolve value 
+catch returns promise object with resolve value

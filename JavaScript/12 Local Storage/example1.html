@@ -1,0 +1,27 @@
+<script>
+    // Example showing the concept of localstorage
+
+    var content = 'Hello user how are you ?';
+    localStorage.setItem("data",content);
+
+    var number = 12345;
+    localStorage.setItem("num",number);
+
+    var obj = {name:"peter parker"};
+    localStorage.setItem("obj",JSON.stringify(obj));
+
+    const receivedData = localStorage.getItem("data");
+    document.write("<br>data : ",receivedData);
+ document.write("<br>typeof data : ",typeof receivedData);
+
+    // const receivedNumber = localStorage.getItem("num");
+const receivedNumber = parseInt(localStorage.getItem("num"));
+    document.write("<br>num : ",receivedNumber);
+ document.write("<br>typeof num : ",typeof receivedNumber);
+
+    // const receivedObj = localStorage.getItem("obj");
+    const receivedObj = JSON.parse(localStorage.getItem("obj"));
+    document.write("<br>obj : ",receivedObj);
+ document.write("<br>typeof obj : ",typeof receivedObj);
+
+</script>

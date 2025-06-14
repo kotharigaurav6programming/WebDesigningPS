@@ -1,0 +1,25 @@
+<!-- example showing the concept of class and object -->
+
+<script>
+    class Rectangle{
+        #length;
+        #breadth;
+        setData(length,breadth){
+            this.#length = length;
+            this.#breadth = breadth;    
+        }
+        #getArea(){
+            document.write("<br>Area of Rectangle : "+(this.#length*this.#breadth));
+        }
+        #getPerimeter(){
+            document.write("<br>Perimeter of Rectangle : "+2*(this.#length+this.#breadth));
+        }
+        operation(){
+            this.#getArea();
+            this.#getPerimeter();
+        }
+    }
+    const obj = new Rectangle();
+    obj.setData(10,13);
+    obj.operation();
+</script>

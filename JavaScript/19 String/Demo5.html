@@ -1,0 +1,11 @@
+<script>
+//    var arr = "Apple, Banana, Mango, Orange, Papaya"; // string literal
+    
+var arr = new String("Apple, Banana, Mango, Orange, Papaya"); // by new keyword
+
+    var fruitNames = arr.split(", ");
+    for(var i in fruitNames){
+        document.write("<br>fruitNames["+i+"] : "+fruitNames[i]);
+    }
+
+</script>

@@ -1,0 +1,26 @@
+<script>
+    var ch = ['A','B','C','D','E'];
+    document.write("<br>Result : "+ch);
+
+    var color = ["Red","Green","Blue","Purple","Blue","pink","yellow"];
+    document.write("<br>Result : "+color);
+
+    document.write("<br>Result : "+color.includes("Green"));
+    document.write("<br>Result : "+color.indexOf("Blue"));
+    document.write("<br>Result : "+color.lastIndexOf("Blue"));
+
+    document.write("<br>Result : "+color.slice(2,6));
+    document.write("<br>Result : "+color.splice(3,1));
+    color.splice(3,1);
+    document.write("<br>Result : "+color);
+
+    document.write("<br>Result : "+color.join("--"));
+    var s = "Andrew";
+    document.write("<br>Result : "+s.charCodeAt(3));
+    document.write("<br>Result : "+String.fromCharCode(65));
+    
+    document.write("<br>Result : "+s.match("andrew"));
+    document.write("<br>Result : "+s.match("Andrew"));
+    
+    
+   </script>
