@@ -1,0 +1,98 @@
+
+Here are **assignment questions on Higher Order Functions in JavaScript**, categorized from **basic to advanced**, ideal for students or practice exercises:
+
+---
+
+## 🔹 **Basic Level**
+
+1. **Write a function that takes another function as an argument and calls it.**
+2. **Create a function `repeatTwice` that takes a function as an argument and calls it two times.**
+3. **Write a function `doubleArray` that uses `map()` to double the numbers in an array.**
+4. **Use `filter()` to return only even numbers from an array.**
+5. **Use `reduce()` to sum all the numbers in an array.**
+
+---
+
+## 🔹 **Intermediate Level**
+
+6. **Write a function `processArray(arr, func)` that takes an array and a function, applies the function to each element, and returns a new array.**
+7. **Create a function `greaterThan(n)` that returns a function which checks if a number is greater than `n`.**
+8. **Write a function that returns a function which logs "Hello, \[name]!" where name is passed later.**
+9. **Use `forEach()` to print each element with its index.**
+10. **Chain `map()`, `filter()` and `reduce()` to:**
+
+    * Multiply each number by 2,
+    * Filter out numbers less than 10,
+    * Sum the remaining numbers.
+
+---
+
+## 🔹 **Advanced Level**
+
+11. **Implement your own `map()` function using a higher-order function.**
+12. **Write a `once(fn)` function that allows the passed function to be called only once.**
+13. **Create a `compose(f, g)` function that returns a function where `compose(f, g)(x)` is `f(g(x))`.**
+14. **Write a `memoize(fn)` function that caches results of expensive function calls.**
+15. **Use `setTimeout()` inside a higher-order function to delay execution of another function.**
+
+---
+
+## 🔹 **Real-Life Scenarios**
+
+16. **Create a higher-order function `withLogging(fn)` that logs the input and output of any function.**
+17. **Use `filter()` to return users who are above 18 from a list of user objects.**
+18. **Use `map()` to extract the names of products from an array of product objects.**
+19. **Use `reduce()` to calculate the total price from a shopping cart array.**
+20. **Write a function that takes an array of functions and returns a new function that calls them in sequence.**
+
+---
+
+Let me know if you want the **answers** or **explanations** for any of these questions!
+---------------------------------------------------
+string questions
+-----------------
+Here are **JavaScript string assignment questions**, organized from **basic** to **advanced levels**—perfect for practice or teaching assignments:
+
+---
+
+## 🔹 **Basic Level**
+
+1. **Write a program to find the length of a string.**
+2. **Write a program to convert a string to uppercase and lowercase.**
+3. **Check if a given string contains a specific substring.**
+4. **Find the index of the first occurrence of a word in a sentence.**
+5. **Extract the first 5 characters of a string using `slice()` or `substring()`.**
+
+---
+
+## 🔹 **Intermediate Level**
+
+6. **Count the number of vowels in a string.**
+7. **Reverse a given string without using built-in methods.**
+8. **Check if a string is a palindrome.**
+9. **Replace all spaces in a string with hyphens (`-`).**
+10. **Capitalize the first letter of each word in a sentence.**
+
+---
+
+## 🔹 **Advanced Level**
+
+11. **Write a function to remove all duplicate characters from a string.**
+12. **Implement a function that compresses a string by counting repeated characters (e.g., "aabbbcc" → "a2b3c2").**
+13. **Find the longest word in a sentence.**
+14. **Check if two strings are anagrams of each other.**
+15. **Write a function to convert a sentence to title case (e.g., "hello world" → "Hello World").**
+
+---
+
+## 🔹 **Real-Life Scenarios**
+
+16. **Extract domain name from an email (e.g., "[abc@gmail.com](mailto:abc@gmail.com)" → "gmail.com").**
+17. **Validate if a string is a valid email address using regex.**
+18. **Split a sentence into words and count how many times each word appears.**
+19. **Format a number with commas as thousands separators (e.g., 1000000 → "1,000,000").**
+20. \*\*Mask all but the last 4 characters of a credit card number (e.g., "1234567812345678" → "\*\*\*\*\*\*\*\*\*\***5678").**
+
+---
+
+Would you like **solutions or hints** for any of these?
