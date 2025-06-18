@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <div class="demo">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Perspiciatis rem at et tempore accusantium obcaecati
+        libero delectus similique eos officiis!</div>
+
+    <div class="demo">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Perspiciatis rem at et tempore accusantium obcaecati
+        libero delectus similique eos officiis!</div>
+
+    <div class="demo">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Perspiciatis rem at et tempore accusantium obcaecati
+        libero delectus similique eos officiis!</div>
+
+    <script>
+        var elementsArray = document.getElementsByClassName("demo");
+        for(var i=0;i<elementsArray.length;i++){
+            if(i==0)
+                elementsArray[i].style.backgroundColor="red";
+            if(i==1)
+                elementsArray[i].style.backgroundColor="green";
+            if(i==2)
+                elementsArray[i].style.backgroundColor="blue";
+            
+        }
+    </script>    
+</body>
+
+</html>

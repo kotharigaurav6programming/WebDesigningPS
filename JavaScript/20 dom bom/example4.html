@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .demo{
+            text-transform: uppercase;
+        }
+        .demoAgain{
+            font-family: cursive;
+        }
+    </style>
+</head>
+<body>
+    <div id="demo" class="demo">
+        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Pariatur nulla ex laudantium omnis vitae nihil maiores, amet voluptatibus incidunt! Illum mollitia necessitatibus officiis ducimus culpa libero cupiditate porro accusamus soluta?
+    </div>
+    <script>
+        var demo = document.getElementById("demo");
+        demo.style.backgroundColor = "red";
+        demo.classList.remove("demo");
+        demo.classList.add("demoAgain");
+    </script>
+</body>
+</html>
