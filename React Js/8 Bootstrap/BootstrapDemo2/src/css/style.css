@@ -1,0 +1,19 @@
+    #box{
+    height: auto;
+    width: 100%;
+    padding: 1%;
+    float: left;
+    text-align: justify;
+}
+#box1,#box2,#box3,#box4{
+    height: auto;
+    width: 23%;
+    background-color: skyblue;
+    color:black;
+    float:left;
+    margin: 1%;
+    padding: 2%;
+}
+#boxImg{
+  width: 100%;
+}

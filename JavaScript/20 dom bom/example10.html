@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Document</title>
+</head>
+<body>
+    <div id="main">
+        <p id="demo1">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptas, sed harum animi neque magni nemo, vitae dolore iure magnam ex modi maiores tempora odio excepturi delectus hic molestias aspernatur optio!</p>
+
+        <p id="demo2">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Aut distinctio asperiores praesentium dignissimos quaerat tempora eum veritatis voluptas, consequuntur et?</p>
+
+    </div>
+      <button onclick="myFun()">Remove</button>
+        <button onclick="myReplaceFun()">Replace</button>
+    <script>
+        function myFun(){
+            var main = document.getElementById("main");
+            var demo2 = document.getElementById("demo2");
+            main.removeChild(demo2);
+        }
+        function myReplaceFun(){
+            var main = document.getElementById("main");
+            var demo2 = document.getElementById("demo2");
+            main.removeChild(demo2);
+
+            var newParagraph = document.createElement("p");
+            var textNode = document.createTextNode("This is my replace example");
+            newParagraph.appendChild(textNode);
+            main.appendChild(newParagraph);
+        }   
+
+</script>
+</body>
+</html>

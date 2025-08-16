@@ -1,0 +1,307 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap');
+
+*{
+    margin:0px;
+    font-family: "Rubik", serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+}
+#container{
+    height: auto;
+    width: 95%;
+    /* background-color: grey; */
+    margin: auto;
+}
+#header{
+    height: 60px;
+    background-color: white;
+}
+#logo{
+    height: 60px;
+}
+#header span{
+    position: absolute;
+    font-size:30px;
+    margin-top: 10px;
+    color:#7500c6;
+}
+#nav{
+    position: sticky;
+    top:0;
+    height:50px;
+    border-radius: 15px;
+    background-color: #7500c6;
+    z-index: 1;
+}
+#nav ul{
+    /* padding-top: 11px; */
+    list-style: none;
+}
+#nav ul li{
+    /* display: inline; */
+    display: inline-block;
+    padding: 11px 32px;
+}
+#nav ul li a{
+    color:white;
+    text-decoration: none;
+    font-size: 22px;
+    /* margin-left: 50px; */
+}
+#nav ul li:hover a{
+    color: #7500c6;
+}
+#nav ul li:hover{
+    /* background:linear-gradient(white,#7500c6); */
+    background-color: whitesmoke;
+    color:#7500c6;
+    height:28px;
+    transition: 0.7s;
+}
+#nav ul li ul{
+    display: none;
+}
+#nav ul li:hover ul{
+    display: block;
+    position: absolute;
+    width: 156px;
+    margin-left: -45px;
+    line-height: 30px;
+    background-color: #7500c6;
+    margin-top: 5px;
+}
+#nav ul li:hover ul a{
+    color:white;
+}
+
+#nav ul li ul li:hover a{
+    color: #7500c6;
+}
+#nav ul li:hover ul li{
+    margin-left: -38px;
+    padding:11px 20px;
+}
+#banner{
+    height: 570px;
+    border-radius: 15px;
+}
+#bannerImg{
+    border-radius: 15px;
+    height:570px;
+    width: 100%;
+}
+#content{
+    padding:50px;
+}
+#content h2{
+    font-size: 26px;
+    padding: 10px 0px;
+}
+#content p{
+    font-size: 18px;
+    text-align: justify;
+    line-height: 26px;
+}
+#mqlogo{
+    height:140px;
+}
+#box{
+    height:400px;
+    background-color: whitesmoke;
+    padding: 40px;   
+}
+#box1{
+    height: 380px;
+    width: 255px;
+    margin: 1%;
+    background-color: white;
+    float: left;
+}
+#boxImg{
+    height: 200px;
+    width: 100%;
+}
+#subbox{
+    width: 90%;
+    /* background-color: blue; */
+    margin: auto;
+}
+#subbox h2{
+    font-size: 22px;
+}
+#subbox p{
+    margin: 2% 0%;
+    text-align: justify;
+    font-size: 15px;
+}
+#subbox button{
+    height: 40px;
+    margin: 5% 0%;
+    width: 100%;
+    border-width: 0px;
+    background-color: #7500c6;
+    color:white;
+    border-radius: 15px;
+}
+#newsletter{
+    height:100px;
+    background-color: #7500c6;
+    padding: 50px;
+}
+#newsletter h1{
+    color:white;
+}
+#newsletter input[type='email']{
+    height:40px;
+    width: 500px;
+    text-align: center;
+    font-size: 18px;
+    outline: 0px;
+    margin: 2% 0% 0% 0%;
+}
+#newsletter input[type='submit']{
+    height:45px;
+    width: 200px;
+    text-align: center;
+    font-size: 18px;
+    border-width: 0px;
+    margin: 2% 0% 0% -0.5%;
+    background-color: black;
+    color:white;
+}
+#about{
+    height:500px;
+    padding: 50px;
+    /* background-color: green; */
+}
+#leftabout{
+    height:300px;
+    width: 300px;
+    border-radius: 50%;
+    /* background-color: red; */
+    margin-top: 6%;
+    float: left;
+}
+#rightabout{
+    height:400px;
+    width: 740px;
+    text-align: justify;
+    /* background-color: red; */
+    margin: 4% 0% 0% 3%;
+    float: left;
+    font-size: 17px;
+    padding: 10px;
+}
+#aboutimage{
+    height: 300px;
+    width:300px;
+    border-radius:50%;
+}
+#contact{
+    height:500px;
+    padding: 50px;
+    /* background-color: rgba(117, 0, 198,0.1); */
+    background-color: whitesmoke;
+}
+#contact1,#contact2,#contact3{
+    height: 380px;
+    width: 210px;
+    line-height: 32px;
+    background-color: #7500c6;
+    margin: 4% 0% 0% 1%;
+    float: left;
+    padding:20px 0px 0px 20px;
+    color:white;
+    border-radius: 20px;
+}
+#contact1 ul li a,#contact2 ul li a{
+    text-decoration: none;
+    color:white;
+}
+#contact4{
+    height: 400px;
+    width: 350px;
+    margin: 4% 0% 0% 1%;
+    float: left;
+}
+#footer{
+    font-size: 18px;
+    padding:10px;
+}
+#section{
+    height: auto;
+    width: 300px;
+    margin: 5% 0% 13% 37%;
+    background-color: white;
+    box-shadow: 1px 1px 10px 1px;
+}
+#btnActive{
+ height:40px;
+ width: 150px;
+ background-color: #7500c6;
+ color:white;
+ font-size: 20px;
+ border-width: 0px;   
+ float: left;
+}
+#btnUnActive{
+    height:40px;
+    width: 150px;
+    background-color: lightgrey;
+    color:black;
+    font-size: 20px;
+    border-width: 0px;              
+    float: left;
+}
+input[type='email'],input[type='password'],input[type='text']{
+    height: 30px;
+    width: 80%;
+    border-width:0px 0px 2px 0px;
+    border-color: black;
+    text-align: center;
+    margin: 5% 0% 0% 8%;
+}
+input[type='checkbox']{
+    margin: 5% 0% 0% 8%;
+}
+input[type='submit'],input[type='reset']{
+    height: 40px;
+    width: 80%;
+    text-align: center;
+    margin: 5% 0% 0% 8%;
+    background-color: #7500c6;
+    color:white;
+    border-width: 0px;
+    font-size: 17px;
+    border-radius: 15px;
+}
+input[type='submit']:hover,input[type='reset']:hover{
+    background-color: crimson;
+    color:white;
+}
+#section a{
+    margin-left: 8%;
+}
+#galleryBox{
+    height: 530px;
+    /* background-color: crimson; */
+}
+#cards{
+    height:300px;
+    width: 220px;
+    margin-left: 5%;
+    margin-top: 8%;
+    float: left;
+    overflow: hidden;
+}
+#cardImage{
+    height:300px;
+    width:220px;
+}
+#cardImage:hover{
+    transition: 2s;
+    transform: scale(1.2);
+    /* transform: rotate(360deg); */
+    /* transform: rotateY(180deg); */
+}

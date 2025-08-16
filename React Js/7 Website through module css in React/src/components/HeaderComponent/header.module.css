@@ -1,0 +1,13 @@
+.header{
+    height: 60px;
+    background-color: white;
+}
+.logo{
+    height: 60px;
+}
+.header span{
+    position: absolute;
+    font-size:30px;
+    margin-top: 10px;
+    color:#7500c6;
+}

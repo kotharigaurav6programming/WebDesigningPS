@@ -18,14 +18,18 @@
         libero delectus similique eos officiis!</div>
 
     <script>
-        var elementsArray = document.getElementsByClassName("demo");
-        for(var i=0;i<elementsArray.length;i++){
+        var doc = document.querySelector(".demo");        
+        doc.style.backgroundColor = "red";
+        doc.style.color = "white";
+
+        var doc1 = document.querySelectorAll(".demo");        
+        for(i=0;i<doc1.length;i++){
             if(i==0)
-                elementsArray[i].style.backgroundColor="red";
+                doc1[i].style.textTransform = "capitalize";
             if(i==1)
-                elementsArray[i].style.backgroundColor="green";
+                doc1[i].style.textTransform = "uppercase";
             if(i==2)
-                elementsArray[i].style.backgroundColor="blue";
+                doc1[i].style.textTransform = "lowercase";
         }
     </script>    
 </body>
