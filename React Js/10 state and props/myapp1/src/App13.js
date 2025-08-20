@@ -1,12 +1,9 @@
 import React from 'react';
-import Display from './DisplayNew.js';
+import Display from './Display.js';
 class App extends React.Component{
-  constructor(props){
-    super(props);
-    this.state = {
-      obj:{},
-      studentArray:[]
-    }
+  state={
+    obj:{},
+    studentArray:[]
   }
   getData = (event)=>{
     const {name,value} = event.target;
@@ -23,13 +20,6 @@ class App extends React.Component{
         studentArray:[...this.state.studentArray,this.state.obj]
       });
     event.target.reset();
-  }
-  deleteData = (index)=>{
-    console.log("received index : "+index);
-    this.state.studentArray.splice(index,1);
-    this.setState({
-      studentArray : [...this.state.studentArray]
-    });
   }
   render(){
     return (<div>
@@ -74,7 +64,7 @@ class App extends React.Component{
           /> <br/>
       </form>
       </div>
-      <Display studentData={this.state.studentArray} delete={this.deleteData}/>
+      <Display studentData={this.state.studentArray}/>
     </div>);
   }
 }

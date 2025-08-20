@@ -1,12 +1,8 @@
 import React from 'react';
-import Display from './DisplayNew.js';
 class App extends React.Component{
-  constructor(props){
-    super(props);
-    this.state = {
-      obj:{},
-      studentArray:[]
-    }
+  state={
+    obj:{},
+    studentArray:[]
   }
   getData = (event)=>{
     const {name,value} = event.target;
@@ -23,13 +19,6 @@ class App extends React.Component{
         studentArray:[...this.state.studentArray,this.state.obj]
       });
     event.target.reset();
-  }
-  deleteData = (index)=>{
-    console.log("received index : "+index);
-    this.state.studentArray.splice(index,1);
-    this.setState({
-      studentArray : [...this.state.studentArray]
-    });
   }
   render(){
     return (<div>
@@ -74,7 +63,29 @@ class App extends React.Component{
           /> <br/>
       </form>
       </div>
-      <Display studentData={this.state.studentArray} delete={this.deleteData}/>
+      <div style={{width:"75%",float:"left",backgroundColor:"teal",height:"445px"}}>
+        <table border={1} cellSpacing={0} cellPadding={8} align="center">
+          <caption><h2>Student Details</h2></caption>
+          <tr>
+            <th>S.No</th>
+            <th>Username</th>
+            <th>Email</th>
+            <th>Password</th>
+            <th>Address</th>
+          </tr>
+          {
+            this.state.studentArray.map((student,index)=>{
+              return(<tr>
+                <td>{index+1}</td>
+                <td>{student.username}</td>
+                <td>{student.email}</td>
+                <td>{student.password}</td>
+                <td>{student.address}</td>
+              </tr>);
+            })
+          }
+        </table>
+      </div>
     </div>);
   }
 }
