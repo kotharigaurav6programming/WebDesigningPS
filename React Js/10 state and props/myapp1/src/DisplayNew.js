@@ -21,7 +21,9 @@ class DisplayNew extends React.Component{
                     <td>{student.password}</td>
                     <td>{student.address}</td>
                     <td>
-                        <button>Update</button>
+                        <button onClick={()=>{
+                            this.props.update({student,index})
+                        }}>Update</button>
                     </td>
                     <td>
                         <button onClick={()=>{
