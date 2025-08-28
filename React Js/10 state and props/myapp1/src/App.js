@@ -1,40 +1,22 @@
-import React, { useState } from 'react';
-import DisplayFunNew from './DisplayFunNew.js';
+import React, { useRef, useState } from 'react';
 function App(){
-  const [userObj,setUserObj] = useState({});
-  const [index,setIndex] = useState(-1);
+  const username = useRef();
+  const email = useRef();
+  const password = useRef();
+  const address = useRef();
+  
   const [studentArray,setStudentArray] = useState([]);
-  const getData = (event)=>{
-    const {name,value} = event.target;
-    setUserObj({
-      ...userObj,
-      [name]:value
-    });
-  }
+
   const handleSubmit = (event)=>{
     event.preventDefault();
-      if(index==-1)
-        setStudentArray([...studentArray,userObj]);
-      else{
-        studentArray.splice(index,1,userObj);
-        setStudentArray([...studentArray]);
-        setIndex(-1);
-      }
-      event.target.reset();
-      setUserObj({
-        username:'',
-        email:'',
-        password:'',
-        address:''
-      });
-  }
-  const updateData = (obj)=>{
-    setUserObj(obj.student);
-    setIndex(obj.index);
-  }
-  const deleteData = (index)=>{
-    studentArray.splice(index,1);
-    setStudentArray([...studentArray]);
+      const obj = {
+        username:username.current.value,
+        email:email.current.value,
+        password:password.current.value,
+        address:address.current.value
+      };
+      setStudentArray([...studentArray,obj]);
+    event.target.reset();
   }
     return (<div>
       <div style={{width:"25%",float:"left",backgroundColor:"black",color:"white",height:"445px"}}>
@@ -44,34 +26,41 @@ function App(){
             type="text"
             name="username"
             id="username"
-            value={userObj.username}
             placeholder='Enter Username'
-            onChange={getData}
+            ref={username} 
+            // onChange={(event)=>{
+            //   setUsername(event.target.value);
+            // }}
           /> <br/>
           <input
             type="email"
             name="email"
             id="email"
-            readOnly = { index==-1 ? "" : "readOnly" } 
-            value={userObj.email}
             placeholder='Enter Email'
-            onChange={getData}
+            ref={email}
+            // onChange={(event)=>{
+            //   setEmail(event.target.value);
+            // }}
           /> <br/>
           <input
             type="password"
             name="password"
             id="password"
-            value={userObj.password}
             placeholder='Enter Password'
-            onChange={getData}
+            ref={password}
+            // onChange={(event)=>{
+            //   setPassword(event.target.value);
+            // }}
           /> <br/>
           <input
             type="text"
             name="address"
             id="address"
-            value={userObj.address}
             placeholder='Enter Address'
-            onChange={getData}
+            ref={address}
+            // onChange={(event)=>{
+            //   setAddress(event.target.value);
+            // }}
           /> <br/>
           <input
             type="submit"
@@ -83,7 +72,29 @@ function App(){
           /> <br/>
       </form>
       </div>
-      <DisplayFunNew student={studentArray} update={updateData} delete={deleteData}/>
+      <div style={{width:"75%",float:"left",backgroundColor:"teal",height:"445px"}}>
+        <table border={1} cellSpacing={0} cellPadding={8} align="center">
+          <caption><h2>Student Details</h2></caption>
+          <tr>
+            <th>S.No</th>
+            <th>Username</th>
+            <th>Email</th>
+            <th>Password</th>
+            <th>Address</th>
+          </tr>
+          {
+            studentArray.map((student,index)=>{
+              return(<tr>
+                <td>{index+1}</td>
+                <td>{student.username}</td>
+                <td>{student.email}</td>
+                <td>{student.password}</td>
+                <td>{student.address}</td>
+              </tr>);
+            })
+          }
+        </table>
+      </div>
     </div>);
 }
 
