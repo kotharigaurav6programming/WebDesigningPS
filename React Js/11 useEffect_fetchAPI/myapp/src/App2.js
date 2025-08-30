@@ -12,17 +12,17 @@ function App() {
 
   // runs only once
 
-  // useEffect(()=>{
-  //   console.log("useEffect executes...");
-  //   setCount(count+1);
-  // },[]);
+  useEffect(()=>{
+    console.log("useEffect executes...",count);
+    setCount(count+1);
+  },[]);
 
   // runs multiple times as state change
   
-  useEffect(()=>{
-    console.log("useEffect executes...");
-    setCount(count+1);
-  },[count]);
+  // useEffect(()=>{
+  //   console.log("useEffect executes...");
+  //   setCount(count+1);
+  // },[count]);
 
   return (<>
     <h1>This is an example of React</h1>
