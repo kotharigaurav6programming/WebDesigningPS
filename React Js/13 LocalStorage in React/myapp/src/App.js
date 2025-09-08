@@ -25,7 +25,7 @@ function App(){
   }
   useEffect(()=>{
     var receivedData = JSON.parse(localStorage.getItem("data"));
-    setStudentArray([...(null||[]),receivedData]);
+    setStudentArray([...(receivedData||[])]);
   },[status]);
     return (<div>
       <div style={{width:"25%",float:"left",backgroundColor:"black",color:"white",height:"445px"}}>
