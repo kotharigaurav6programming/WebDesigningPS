@@ -6,9 +6,10 @@ import { loginUser, resetMessage } from '../store/userSlice.js';
 function Login(){
     localStorage.setItem("navShow","login");
     const userStateObj = useSelector(state=>state.userSlice);
+    const navigate = useNavigate();
+   
     const dispatch = useDispatch();
     const [userObj,setUserObj] = useState({});
-    const navigate = useNavigate();
     useEffect(()=>{
         dispatch(resetMessage());
     });
